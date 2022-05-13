@@ -1,0 +1,1000 @@
+[08-Feb-2022 17:04:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 17:59:32 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[08-Feb-2022 17:59:32 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[08-Feb-2022 17:59:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 17:59:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 18:03:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 18:04:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 18:10:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[08-Feb-2022 18:11:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 14
+[08-Feb-2022 18:13:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 14
+[08-Feb-2022 18:14:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 15
+[08-Feb-2022 18:16:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[10-Feb-2022 17:11:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 12
+[10-Feb-2022 17:30:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 12
+[10-Feb-2022 17:31:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 13
+[10-Feb-2022 17:32:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 14
+[10-Feb-2022 17:35:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar_cotizacion.php on line 14
+[10-Feb-2022 19:13:38 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[10-Feb-2022 19:13:38 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:41:46 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 18:57:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:00:42 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:02:28 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 19:47:12 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 20:02:01 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:28:46 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[20-Feb-2022 23:28:46 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[20-Feb-2022 23:28:46 UTC] PHP Notice:  Undefined index: idempleado in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 148
+[20-Feb-2022 23:28:46 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[20-Feb-2022 23:28:46 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[20-Feb-2022 23:30:15 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:04:32 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:44 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:09:57 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:29 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:10:48 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:11:50 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:14:40 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cnsticom/public_html/proyectos/ferreteria_dev/footer.php on line 92
+[21-Feb-2022 00:14:50 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cnsticom/public_html/proyectos/ferreteria_dev/footer.php on line 92
+[21-Feb-2022 00:15:05 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cnsticom/public_html/proyectos/ferreteria_dev/footer.php on line 92
+[21-Feb-2022 00:15:51 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cnsticom/public_html/proyectos/ferreteria_dev/footer.php on line 92
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[21-Feb-2022 00:23:23 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:25:12 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:42 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:27:52 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/familias.php on line 56
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 00:29:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:16:19 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[21-Feb-2022 01:16:19 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:18:54 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[21-Feb-2022 01:19:11 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_clientes.php on line 78
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:22:22 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/proveedores.php on line 61
+[21-Feb-2022 01:25:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_prveedores.php on line 61
+[21-Feb-2022 01:25:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_prveedores.php on line 61
+[21-Feb-2022 01:25:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_prveedores.php on line 61
+[21-Feb-2022 01:25:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_prveedores.php on line 61
+[21-Feb-2022 01:25:28 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_prveedores.php on line 61
+[21-Feb-2022 01:32:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on string in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-subfamilia.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-subfamilia.php on line 65
+[21-Feb-2022 04:48:36 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[21-Feb-2022 04:48:36 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[21-Feb-2022 17:41:34 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[21-Feb-2022 17:41:34 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[21-Feb-2022 19:49:54 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 19:53:38 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 21:02:46 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 21:03:31 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 21:04:30 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 21:07:55 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[21-Feb-2022 21:08:13 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[21-Feb-2022 21:08:13 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[22-Feb-2022 00:18:14 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 00:18:14 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 00:21:43 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 00:21:43 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 00:22:30 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 00:22:30 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 00:22:30 UTC] PHP Notice:  Undefined index: idempleado in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 148
+[22-Feb-2022 00:22:30 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[22-Feb-2022 00:22:30 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[22-Feb-2022 00:26:17 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[22-Feb-2022 00:26:17 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[22-Feb-2022 00:26:17 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[22-Feb-2022 19:05:09 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 19:05:09 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 19:05:56 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[22-Feb-2022 19:05:56 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_familias.php on line 56
+[22-Feb-2022 19:59:18 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 19:59:18 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 19:59:18 UTC] PHP Notice:  Undefined index: idsfp in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php on line 4
+[22-Feb-2022 19:59:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php on line 6
+[22-Feb-2022 20:26:39 UTC] PHP Notice:  Undefined variable: resultfamilia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php on line 73
+[22-Feb-2022 20:26:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-subfamiliaproducto.php on line 73
+[22-Feb-2022 23:43:24 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 23:43:24 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[22-Feb-2022 23:48:57 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[22-Feb-2022 23:48:57 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[23-Feb-2022 00:11:37 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[23-Feb-2022 00:11:37 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[23-Feb-2022 02:56:56 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[23-Feb-2022 02:56:56 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[23-Feb-2022 02:58:54 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 02:58:54 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 02:58:54 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 02:59:13 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 02:59:13 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 02:59:13 UTC] PHP Notice:  Undefined index: numero_familiaprod in /home/cnsticom/public_html/proyectos/ferreteria_dev/historico_subfamilias.php on line 56
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[23-Feb-2022 03:25:39 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[23-Feb-2022 15:47:30 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[23-Feb-2022 15:47:30 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[23-Feb-2022 15:47:30 UTC] PHP Notice:  Undefined index: idempleado in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 148
+[23-Feb-2022 15:47:30 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[23-Feb-2022 15:47:30 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/registrar-operacion.php on line 149
+[23-Feb-2022 17:26:10 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[23-Feb-2022 17:26:10 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:21 UTC] PHP Notice:  Undefined index: direccion in /home/cnsticom/public_html/proyectos/ferreteria_dev/clientes.php on line 78
+[23-Feb-2022 20:42:31 UTC] PHP Notice:  Undefined index: pais in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-clientes.php on line 126
+[20-Mar-2022 01:13:19 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[20-Mar-2022 01:13:19 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[20-Mar-2022 02:29:19 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[20-Mar-2022 02:29:19 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 18
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 75
+[20-Mar-2022 03:21:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 93
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 18
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 78
+[20-Mar-2022 03:22:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 96
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 20
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Undefined variable:  in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:22:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 98
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 80
+[20-Mar-2022 03:24:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 98
+[20-Mar-2022 03:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 98
+[20-Mar-2022 03:26:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 99
+[20-Mar-2022 03:27:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 99
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 102
+[20-Mar-2022 03:28:00 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 106
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:32:54 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Array to string conversion in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined variable: Array in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 103
+[20-Mar-2022 03:33:15 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[20-Mar-2022 03:34:12 UTC] PHP Notice:  Undefined index: familia in /home/cnsticom/public_html/proyectos/ferreteria_dev/editar-productos.php on line 107
+[29-Mar-2022 04:22:01 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[29-Mar-2022 04:22:01 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[31-Mar-2022 04:06:56 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 105
+[31-Mar-2022 04:06:56 UTC] PHP Notice:  Undefined index: Puesto in /home/cnsticom/public_html/proyectos/ferreteria_dev/menunav.php on line 106
+[31-Mar-2022 04:06:56 UTC] PHP Notice:  Undefined index: Nombre in /home/cnsticom/public_html/proyectos/ferreteria_dev/home.php on line 5
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 82
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:44:47 UTC] PHP Notice:  Undefined offset: 1 in /home/cnsticom/public_html/proyectos/ferreteria_dev/mostrarproducto_cotiza.php on line 79
+[27-Apr-2022 23:49:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[27-Apr-2022 23:49:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[27-Apr-2022 23:49:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[27-Apr-2022 23:49:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[27-Apr-2022 23:49:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[27-Apr-2022 23:49:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[28-Apr-2022 01:07:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[28-Apr-2022 01:09:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31
+[28-Apr-2022 01:14:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/cnsticom/public_html/proyectos/ferreteria_dev/impresion_cotizacion.php on line 31

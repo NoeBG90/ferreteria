@@ -1,0 +1,12 @@
+.alineacion {
+	word-wrap: break-word;
+	font-weight: bold;
+}
+.tamanos {
+	display: grid;
+	grid-template-columns: auto;
+	width: 100%;
+	text-align: center;
+	border: 1px solid gainsboro;
+	
+}
