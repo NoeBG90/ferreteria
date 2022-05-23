@@ -71,7 +71,7 @@ $result = $conexio->query($query);
                                         // print_r($fila);
                                     ?>
                                         <tr>
-                                            <td><a class="detalleiframe" href="detalleprovprod.php?id_producto=<?php echo $fila['id_producto']; ?>"><?php echo $fila['numero_producto']; ?></a></td>
+                                            <td><a class="detalleiframe" href="detalleprovprod.php?id_producto=<?php echo $fila['id_producto']; ?>"><?php echo $fila['codigo_producto']; ?></a></td>
                                             <td><?php echo $fila['producto']; ?></td>
                                             <td><?php echo $fila['familia']; ?></td>
                                             <td><?php echo $fila['descripcion']; ?></td>
