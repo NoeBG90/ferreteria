@@ -1,25 +1,21 @@
 $(document).ready(function(){
 
 $('#slsfamilia').on("change", function(e) {
-    $.post( "servlets/get_subfamilias.php",{"slsfamilia":$("#slsfamilia").val()}, function( data ) {
-                    console.log(data);
-                    $('#slssubfamilia').empty();
-                    var $option = $("<option/>", {
-                            value: "",
-                            text: "*"
-                          });
-                          $('#slssubfamilia').append($option);
-                        $.each(data, function(key, value) {
-                            console.log(key);
-                            console.log(value);
-                          var $option = $("<option/>", {
-                            value: value.id,
-                            text: value.subfamilia
-                          });
-                          $('#slssubfamilia').append($option);
-                        });
-
-                });
+    $.post( "servlets/get_subfamilias.php", {"slsfamilia": $("#slsfamilia").val() }, function( data ) {
+        $('#slssubfamilia').empty();
+            var $option = $("<option/>", {
+                value: "",
+                text: "*"
+        });
+        $('#slssubfamilia').append($option);
+        $.each(data, function(key, value) {
+            var $option = $("<option/>", {
+                value: value.id,
+                text: value.subfamilia
+            });
+            $('#slssubfamilia').append($option);
+        });
+    });
 });
 
 
@@ -293,51 +289,48 @@ $('#frmregistroproductos').validate(
       }
     }
 );
-    $("#frmregistroproductos").on('submit',(function(e) {
-        e.preventDefault();
-        $.ajax({
-        url: "servlets/registrarproductos.php",
-        type: "POST",
-        data:  new FormData(this),
-        contentType: false,
-        cache: false,
-        processData:false,
-            beforeSend : function()
-               {
-                    //$("#preview").fadeOut();
-                    $("#err").fadeOut();
-               },
-            success: function(data)
-                {
-                    if(data!='1')
-                {
-                    // invalid file format.
-                    //$("#err").html("Invalid File !").fadeIn();
-                    swal({
-                        title: "",
-                        text: data,
-                        type: "error"
-                    });
-                }else {
-                 // view uploaded file.
-                 //$("#preview").html(data).fadeIn();
-                 //$("#form")[0].reset();
-                    swal({
-                        title: "",
-                        text: "Registro generado exitosamente",
-                        type: "success"
-                    });
-                }
-                },
-                    error: function(e){
-                        //$("#err").html(e).fadeIn();
-                        swal({
-                            title: "",
-                            text: e,
-                            type: "warning"
-                            });
-                    }
-        });
+$("#frmregistroproductos").on('submit',(function(e) {
+    e.preventDefault();
+    $.ajax({
+    url: "servlets/registrarproductos.php",
+    type: "POST",
+    dataType: "json",
+    data:  new FormData(this),
+    contentType: false,
+    cache: false,
+    processData:false,
+    beforeSend : function() {
+            //$("#preview").fadeOut();
+            $("#err").fadeOut();
+
+        },success: function(data){
+            if(data.code) {
+                // view uploaded file.
+                //$("#preview").html(data).fadeIn();
+                swal({
+                    title: "",
+                    text: "Registro generado exitosamente. SKU: " + data.SKU,
+                    type: "success"
+                });
+                $("#frmregistroproductos")[0].reset();
+            }else {
+                // invalid file format.
+                //$("#err").html("Invalid File !").fadeIn();
+                swal({
+                    title: "",
+                    text: data.message,
+                    type: "error"
+                });
+            }
+        },error: function(e){
+            //$("#err").html(e).fadeIn();
+            swal({
+                title: "",
+                text: e,
+                type: "warning"
+            });
+        }
+    });
 }));
 
 
@@ -462,9 +455,9 @@ $('#frmregistroproveedores').validate(
 $('#frmregistrofamiliaproductos').validate(
     {
         rules: {
-            txtfamproducto: {required:true},
-            slsfamstatus: {required:true},
-            textafamdescripcion: {required: true}
+            txtfamproducto: { required:true },
+            slsfamstatus: { required:true },
+            textafamdescripcion: { required: true }
         },
         messages: {
             txtfamproducto: {required:"Ingrese el nombre de la familia del producto"},
@@ -472,24 +465,29 @@ $('#frmregistrofamiliaproductos').validate(
             textafamdescripcion: {required: "Ingrese descripción de la familia del producto"}
         },
         submitHandler: function(form) {
-        $.post( "servlets/registrarfamiliaproducto.php",$("#frmregistrofamiliaproductos").serialize(), function( data ) {
-            console.log(data);
-            if(data ==1 ){
-                swal({
-                    title: "",
-                    text: "Registro Familia generado exitosamente",
-                    type: "success"
-                });
-                location.replace("familias.php");
-            }else{
-                swal({
-                    title: "",
-                    text: data,
-                    type: "warning"
-                });
-            }
-        });
-        }
+            $.post(
+                "servlets/registrarfamiliaproducto.php", $("#frmregistrofamiliaproductos").serialize(),
+                function (data) {
+                    console.log(data);
+                  if (data.code) {
+                    swal({
+                      title: "",
+                      text: "Registro Familia generado exitosamente",
+                      type: "success",
+                    },function(a){
+                        if(a)
+                            location.replace("familias.php");
+                    });
+                  } else {
+                    swal({
+                      title: "",
+                      text: data.message,
+                      type: "warning",
+                    });
+                  }
+                },"json",
+            )
+        },
     }
 );
 
@@ -511,27 +509,32 @@ $('#frmregistrosubfamilia').validate(
             textasubfamdescripcion: {required: "Ingrese una descripción"}
         },
         submitHandler: function(form) {
-        $.post( "servlets/registrarsubfamiliaproducto.php",$("#frmregistrosubfamilia").serialize(), function( data ) {
-            console.log(data);
-            if(data ==1 ){
-                swal({
-                    title: "",
-                    text: "Registro Familia generado exitosamente",
-                    type: "success"
-                });
-                location.replace("subfamilias.php");
-            }else{
-                swal({
-                    title: "",
-                    text: data,
-                    type: "warning"
-                });
-            }
-        });
+        $.post( 
+            "servlets/registrarsubfamiliaproducto.php",$("#frmregistrosubfamilia").serialize(), 
+            function( data ) {
+                console.log(data);
+                if(data.code){
+                    swal({
+                        title: "",
+                        text: "Registro SubFamilia generado exitosamente",
+                        type: "success"
+                    },function(a){
+                        if(a)
+                            location.replace("subfamilias.php");
+                    });
+                }else{
+                    swal({
+                        title: "",
+                        text: data.message,
+                        type: "warning"
+                    });
+                }
+            },
+            "json",
+            );
         }
     }
 );
-
 
 
 //Editar Proveedores
@@ -651,8 +654,10 @@ $('#frmeditarsubfamiliaproductos').validate(
                     title: "",
                     text: "Actualización SubFamilia Producto exitosamente",
                     type: "success"
+                },function(a){
+                    if(a)
+                        location.replace("subfamilias.php");                    
                 });
-                location.replace("subfamilias.php");
             }else{
                 swal({
                     title: "",
@@ -843,8 +848,12 @@ $('#frmeditarproductos').validate(
                     //$("#form")[0].reset();
                     swal({
                         title: "",
-                        text: "Registro generado exitosamente",
+                        text: "Registro actualizado exitosamente",
                         type: "success"
+                    },function(r){
+                        if(r){
+                            location.replace("Productos.php")
+                        }
                     });
                 }
             },

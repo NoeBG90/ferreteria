@@ -40,7 +40,7 @@ $querypedido="select folio_operacion ,vigencia_operacion , tiempo_entrega ,consi
 $queryvendedor="select e.* from clientes c,empleados e,operaciones c2 where
             c.id_empleado =e.id_empleado
             and c2.id_cliente =c.id_cliente 
-            and c2.id_operacion=".$id_pedido
+            and c2.id_operacion=".$id_pedido;
             $vendedor="";
             $result_vendedor=$conexio->query($queryvendedor);
         while($filavendedor=$result_vendedor->fetch_assoc()){
@@ -90,4 +90,3 @@ $objfull->header=$objheader;
 $objfull->detalle=$objdetalletabla;
 $objfull->tabla=$_SESSION['tabla_cotizacion'];
 print_r(json_encode($objfull));
-?>

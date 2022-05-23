@@ -1,9 +1,9 @@
 <?php
 include "menunav.php";
 include "conexion/conexion.php";
-        $conexio=   conectar_bd();
-        $query="SELECT * FROM familia_producto where estatus='Inactivo';";
-        $result=$conexio->query($query);
+$conexio =   conectar_bd();
+$query = "SELECT * FROM familia_producto where estatus='Inactivo';";
+$result = $conexio->query($query);
 ?>
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
@@ -35,54 +35,54 @@ include "conexion/conexion.php";
                                 <span>Nueva Familia</span>
                                  </a></a></li>-->
                         </ul>
-                    <div class="table-responsive">
-                        <table id="familias" class="table table-striped table-hover table-bordered dt-responsive nowrap">
-                            <thead>
-                                <tr>
-                                    <!--<th data-toggle="true">Núm_Familia Producto</th>-->
-                                    <th data-toggle="true">Familia Producto</th>
-                                    <th data-hide="phone">Estatus</th>
-                                    <th data-hide="phone">Fecha Registro</th>
-                                    <th data-hide="phone">Fecha Actualización</th>
-                                    <th data-hide="phone">Descripción</th>
-                                    <th class="text-right" data-sort-ignore="true">Acción</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                    while($fila=$result->fetch_assoc()){
-                                ?>
-                                <tr>
-                                    <!--<td><?php echo $fila['numero_familiaprod'];?></td>-->
-                                    <td><?php echo $fila['familia'];?></td>
-                                    <td>
-                                        <span class="label
+                        <div class="table-responsive">
+                            <table id="familias" class="table table-striped table-hover table-bordered dt-responsive nowrap">
+                                <thead>
+                                    <tr>
+                                        <!--<th data-toggle="true">Núm_Familia Producto</th>-->
+                                        <th data-toggle="true">Familia Producto</th>
+                                        <th data-hide="phone">Estatus</th>
+                                        <th data-hide="phone">Fecha Registro</th>
+                                        <th data-hide="phone">Fecha Actualización</th>
+                                        <th data-hide="phone">Descripción</th>
+                                        <th class="text-right" data-sort-ignore="true">Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    while ($fila = $result->fetch_assoc()) {
+                                    ?>
+                                        <tr>
+                                            <!--<td><?php echo $fila['numero_familiaprod']; ?></td>-->
+                                            <td><?php echo $fila['familia']; ?></td>
+                                            <td>
+                                                <span class="label
                                         <?php
-                                            if($fila['estatus']=='Activo'){
-                                                echo "label-primary";
-                                            }else if ($fila['estatus']=='Inactivo'){
-                                                echo "label-danger";
-                                            }else{
-                                                echo "label-warning";
-                                            }
+                                        if ($fila['estatus'] == 'Activo') {
+                                            echo "label-primary";
+                                        } else if ($fila['estatus'] == 'Inactivo') {
+                                            echo "label-danger";
+                                        } else {
+                                            echo "label-warning";
+                                        }
                                         ?>
-                                            "><?php echo $fila['estatus'];?>
-                                        </span>
-                                    </td>
-                                    <td><?php echo $fila['fecha_registro'];?></td>
-                                    <td><?php echo $fila['fecha_actualizacion'];?></td>
-                                    <td><?php echo $fila['descripcion'];?></td>
-                                    <td class="text-right">
-                                        <div class="btn-group">
-                                            <a href="editar-familiaproducto.php?idfp=<?php echo $fila['id_familia'];?>" class="btn-white btn btn-xs">Editar</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                                            "><?php echo $fila['estatus']; ?>
+                                                </span>
+                                            </td>
+                                            <td><?php echo $fila['created_at']; ?></td>
+                                            <td><?php echo $fila['updated_at']; ?></td>
+                                            <td><?php echo $fila['descripcion']; ?></td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <a href="editar-familiaproducto.php?idfp=<?php echo $fila['id_familia']; ?>" class="btn-white btn btn-xs">Editar</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ include "conexion/conexion.php";
     </div>
 </div>
 <script type="text/javascript">
-    localStorage.setItem("pagina","historico_familias");
+    localStorage.setItem("pagina", "historico_familias");
 </script>
 <?php
 include "footer.php";

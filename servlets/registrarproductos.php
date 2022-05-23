@@ -1,60 +1,78 @@
 <?php
-ini_set("display_errors","1");
+ini_set("display_errors", "1");
 include "../conexion/conexion.php";
+$conexio =  conectar_bd();
+
 //print_r($_FILES);
 //print_r($_POST);
 $dir_subida = 'subida/';
-$fichero_subido = $dir_subida . date('ymdhis').basename($_FILES['img']['name']);
+$fichero_subido = $dir_subida . date('ymdhis') . basename($_FILES['img']['name']);
 
+//echo "El fichero es válido y se subió con éxito.\n";
 if (move_uploaded_file($_FILES['img']['tmp_name'], $fichero_subido)) {
-    //echo "El fichero es válido y se subió con éxito.\n";
-    $conexio =  conectar_bd();
 
+	$nombreProducto = $_POST['txtproducto'];
+	$SKU = '';
+	$descripcionProducto = $_POST['textadescripcion'];
+	$idFamilia = $_POST['slsfamilia'];
+	$idSubFamilia = $_POST['slssubfamilia'];
+	$stock = $_POST['txtstock'];
+	$marca = $_POST['txtmarca'];
+	$modelo = $_POST['txtmodelo'];
+	$precioCompra = $_POST['txtprecompra'];
+	$precioVenta = $_POST['txtpreventa'];
+	$estatus = $_POST['slsstatus'];
+	$unidadMedida = $_POST['slsumedida'];
+	$fechaAlta = date("Y:m:d H:i:s");
 
-$queryvalidaproducto="select * from productos where producto='".$_POST['txtproducto']."';";
-$result = $conexio->query($queryvalidaproducto);
-if ($result->num_rows>0){
-	echo "El producto ya se encuentra registrado";
-}else{	
+	//Validacion por Nombre Producto
+	$queryvalidaproducto = "select * from productos where producto='" . $nombreProducto . "';";
+	$resultProducto = $conexio->query($queryvalidaproducto);
 
-$queryvalidaproducto="select * from productos where sku='".$_POST['txtSKU']."';";
-//echo $queryvalidaproducto;
-$result = $conexio->query($queryvalidaproducto);
-if ($result->num_rows>0){
-	echo "El SKU ya se encuentra registrado";
-}else{	
+	//Validacion por SKU
+	$queryvalidaproducto = "select * from productos where sku='" . $SKU . "';";
+	$resultSKU = $conexio->query($queryvalidaproducto);
 
+	if ($resultProducto->num_rows > 0) {
+		echo "El producto ya se encuentra registrado";
+	} else if ($resultSKU->num_rows > 0) {
+		echo "El SKU ya se encuentra registrado";
+	} else {
+		$data = null;
+		try {
 
-	$query="INSERT INTO productos
-(producto, descripcion, id_familia, stok, SKU, marca, modelo, precio_compra, precio_venta, fecha_registro, fecha_actualizacion, estatus, imagen_producto,unidad_medida)
-VALUES('".$_POST['txtproducto']."', '".$_POST['textadescripcion']."', ".$_POST['slssubfamilia'].", ".$_POST['txtstock'].", '".$_POST['clave_producto'].$_POST['txtSKU']."', '".$_POST['txtmarca']."', '".$_POST['txtmodelo']."', ".$_POST['txtprecompra'].", ".$_POST['txtpreventa'].", now(), now(),'".$_POST['slsstatus']."','".$fichero_subido."', '".$_POST['slsumedida']."');
-";
-	//echo $query;
-	$result = $conexio->query($query);
+			$query = 'CALL sp_alta_producto(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+			$stmt = $conexio->prepare($query);
+			$stmt->bind_param(
+				'ssiissssddssss',
+				$nombreProducto,
+				$descripcionProducto,
+				$idFamilia,
+				$idSubFamilia,
+				$stock,
+				$marca,
+				$modelo,
+				$precioCompra,
+				$precioVenta,
+				$fechaAlta,
+				$fechaAlta,
+				$estatus,
+				$fichero_subido,
+				$unidadMedida
+			);
 
-	$numero_producto=$conexio->insert_id;
-	//echo $numero_producto;
-	$update_numero ="update productos set numero_producto =concat('PRO-',LPAD(".$numero_producto." , 5 , '0')) where id_producto =".$numero_producto;
-	$resultupdate = $conexio->query($update_numero);
-	//echo $update_numero;
-	//print_r($resultupdate);
-	print_r($result);
-}
+			$stmt->execute();
+			$result = $stmt->get_result();
+			$response = $result->fetch_all(MYSQLI_ASSOC);
+			$stmt->close();
+			$conexio->close();
 
-}
+			echo json_encode($response[0]);
+		} catch (Exception $e) {
+			$data = array("code" => false, "message" => 'Error en registro del producto. Favor de intentar mas tarde.');
+			echo json_encode($data);
+		}
+	}
 } else {
-    echo "¡Ingrese los datos necesarios!\n";
+	echo "¡Ingrese los datos necesarios!\n";
 }
-
-//echo 'Más información de depuración:';
-//print_r($_FILES);
-
-
-
-
-
-
-
-
-
-?>
