@@ -10,13 +10,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <!-- DataTable -->
     <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
-
 </head>
 
 <body class="">
@@ -25,7 +22,6 @@
     include "conexion/conexion.php";
     $conexio =   conectar_bd();
     $query = "SELECT p.*,fp.familia FROM productos p, familia_producto fp WHERE p.id_familia=fp.id_familia and imagen_producto !='' and (producto like '%" . $_GET['producto'] . "%' or SKU like '%" . $_GET['producto'] . "%')";
-
     $result = $conexio->query($query);
     ?>
     <div id="wrapper">
@@ -104,31 +100,28 @@
     <script src="js/plugins/pace/pace.min.js"></script>
 
 
-
     <script type="text/javascript">
         $(document).ready(function() {
             $(".addcar").click(function() {
-                console.log(this.id);
-
+                console.log("idPro", this.id);
                 $.post("servlets/calculadora_comprar.php", {
                     producto: this.id
                 }, function(data) {
-                    console.log(data);
                     window.parent.$('#tbcompra tbody').html(data);
-
+                    window.parent.CallFunctionActualizarTabla();
                 });
-
             });
-
         });
     </script>
     <!--DataTable -->
     <script src="js/plugins/dataTables/datatables.min.js"></script>
     <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
-
     <!--Tables -->
     <script type="text/javascript" src="js/tables.js"></script>
-
+    <?php
+    $result->close();
+    $conexio->close();
+    ?>
 </body>
 
 </html>

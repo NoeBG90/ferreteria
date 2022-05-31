@@ -28,26 +28,21 @@ $('#slssubfamilia').on("change", function(e) {
 });
 
 
-
-
-
 $('#txtcp').on("input", function(e) {
     $.post( "servlets/get_catdirecciones.php",{"txtcp":$("#txtcp").val()}, function( data ) {
-                    console.log(data);
-                    $("#txtciudad").val(data['municipio']);
-                    $("#txtedo").val(data['estado']);
-                    $('#slscolonia').empty()
-
-
-                        $.each(data['colonias'], function(key, value) {
-                          var $option = $("<option/>", {
-                            value: key,
-                            text: value
-                          });
-                          $('#slscolonia').append($option);
-                        });
-
-                });
+        console.log(data);
+        $("#txtciudad").val(data['municipio']);
+        $("#txtedo").val(data['estado']);
+        $('#slscolonia').empty();
+        
+        $.each(data['colonias'], function(key, value) {
+            var $option = $("<option/>", {
+                value: value,
+                text: value
+            });
+            $('#slscolonia').append($option);
+        });
+    });
 });
 
 $('#frmcompra').validate(
@@ -338,6 +333,7 @@ $("#frmregistroproductos").on('submit',(function(e) {
 $('#formregistroclientes').validate(
     {
         rules: {
+            radioTipoCliente: {required:true},
             txtnomcliente: {required:true},
             txtRFC: {required: true},
             txttel:{required:true, number:true, maxlength: 10,minlength:10},
@@ -353,9 +349,13 @@ $('#formregistroclientes').validate(
             txtpais:{required: true},
             slsvendedor: {required:true},
             txtdescuento:{required:true},
-            slsstatus: {required:true}
+            slsstatus: {required:true},
+            slscfdi: {required:true},
+            txtmontocredito: {required:true},
+            txtdiascredito: {required:true}
         },
         messages: {
+            radioTipoCliente: {required:"Ingrese tipo de cliente"},
             txtnomcliente: {required:"Ingrese Nombre del cliente"},
             txtRFC: {required:"Ingrese RFC"},
             txttel: {required: "Ingrese un número teléfonico", number:"Ingrese solo números", maxlength: "Teléfono invalido",minlength:"Teléfono invalido"},
@@ -371,9 +371,13 @@ $('#formregistroclientes').validate(
             txtpais:{required:"Ingrese País del cliente"},
             slsvendedor: {required:"Seleccione el vendedor asignado al cliente"},
             txtdescuento: {required:"Ingrese el descuento correspondiente al cliente"},
-            slsstatus: {required:"Seleccione el estatus del cliente"}
+            slsstatus: {required:"Seleccione el estatus del cliente"},
+            slscfdi: {required:"Seleccione el uso de CFDI"},
+            txtmontocredito: {required:"Ingrese el monto del crédito"},
+            txtdiascredito: {required:"Ingrese días del crédito"}
         },
         submitHandler: function(form) {
+            console.log($("#formregistroclientes").serialize());
             $.post( "servlets/registrarclientes.php",$("#formregistroclientes").serialize(), function( data ) {
                 console.log(data);
                 if(data ==1 ){
@@ -395,6 +399,31 @@ $('#formregistroclientes').validate(
     }
 );
 
+$('input[type=radio][name=radioTipoCliente]').change(function() {
+    console.log(this.value);
+    $.post( "servlets/get_catusoscfdi.php",{"tipoCliente":this.value}, function( data ) {
+        $('#slscfdi').empty();
+        var $option = $("<option/>", {
+            value: "",
+            text: "*"
+        });
+        $('#slscfdi').append($option);
+        $.each(data, function(key, value) {
+            var $option = $("<option/>", {
+                value: value.id,
+                text: value.descripcion
+            });
+            $('#slscfdi').append($option);
+        });
+    });
+    if (this.value == 'allot') {
+        alert("Allot Thai Gayo Bhai");
+    }
+    else if (this.value == 'transfer') {
+        alert("Transfer Thai Gayo");
+    }
+});
+
 //Registro Proveedores
 $('#frmregistroproveedores').validate(
     {
@@ -413,6 +442,9 @@ $('#frmregistroproveedores').validate(
             txtedo:{required:true},
             txtpais:{required: true},
             txtemail:{required: true, email: true},
+            //txtcfdi:{required: true},
+            //txtmontocredito:{required: true},
+            //txtdiascredito:{required: true},
         },
         messages: {
             txtnomproveedor: {required:"Ingrese Nombre del proveedor"},
@@ -428,25 +460,30 @@ $('#frmregistroproveedores').validate(
             txtciudad:{required:"Ingrese Ciudad del proveedor"},
             txtedo:{required:"Ingrese Estado de residencia del proveedor"},
             txtpais:{required:"Ingrese País del proveedor"},
-            txtemail:{required: "Ingrese el email", email: "Email invalido"}
+            txtemail:{required: "Ingrese el email", email: "Email invalido"},
+            //txtcfdi:{rrequired: "Ingrese el CFDI"},
+            //txtmontocredito:{required: "Ingrese monto crédito"},
+            //txtdiascredito:{required: "Ingrese número de días crédito"},
         },
         submitHandler: function(form) {
-        $.post( "servlets/registrarproveedores.php",$("#frmregistroproveedores").serialize(), function( data ) {
-        console.log(data);
-        if(data ==1 ){
-            swal({
-                title: "",
-                text: "Registro Proveedor generado exitosamente",
-                type: "success"
+            $.post( "servlets/registrarproveedores.php",$("#frmregistroproveedores").serialize(), function( data ) {
+                console.log(data);
+                if(data ==1 ){
+                    swal({
+                        title: "",
+                        text: "Registro Proveedor generado exitosamente",
+                        type: "success"
+                    }, function(){
+                        location.replace("proveedores.php");
+                    });
+                }else{
+                    swal({
+                        title: "",
+                        text: data,
+                        type: "warning"
+                    });
+                }
             });
-        }else{
-            swal({
-                title: "",
-                text: data,
-                type: "warning"
-            });
-        }
-        });
         }
     }
 );
@@ -582,6 +619,8 @@ $('#frmeditarproveedores').validate(
                     title: "",
                     text: "Actualización Proveedor exitosamente",
                     type: "success"
+                },function(){
+                    location.replace("proveedores.php");
                 });
             }else{
                 swal({
@@ -673,6 +712,7 @@ $('#frmeditarsubfamiliaproductos').validate(
 $('#frmeditarclientes').validate(
     {
         rules: {
+            radioTipoCliente : {required:true},
             txtnomcliente: {required:true},
             txtRFC: {required: true},
             txttel:{required:true, number:true, maxlength: 10,minlength:10},
@@ -688,9 +728,13 @@ $('#frmeditarclientes').validate(
             txtpais:{required: true},
             slsvendedor: {required:true},
             txtdescuento:{required:true},
-            slsstatus: {required:true}
+            slsstatus: {required:true},
+            slscfdi: {required:true},
+            txtmontocredito: {required:true},
+            txtdiascredito: {required:true}
         },
         messages: {
+            radioTipoCliente: {required:"Ingrese tipo de cliente"},
             txtnomcliente: {required:"Ingrese Nombre del cliente"},
             txtRFC: {required:"Ingrese RFC"},
             txttel: {required: "Ingrese un número teléfonico", number:"Ingrese solo números", maxlength: "Teléfono invalido",minlength:"Teléfono invalido"},
@@ -706,7 +750,10 @@ $('#frmeditarclientes').validate(
             txtpais:{required:"Ingrese País del cliente"},
             slsvendedor: {required:"Seleccione el vendedor asignado al cliente"},
             txtdescuento: {required:"Ingrese el descuento correspondiente al cliente"},
-            slsstatus: {required:"Seleccione el estatus del cliente"}
+            slsstatus: {required:"Seleccione el estatus del cliente"},
+            slscfdi: {required:"Seleccione el uso de CFDI"},
+            txtmontocredito: {required:"Ingrese el monto del crédito"},
+            txtdiascredito: {required:"Ingrese días del crédito"}
         },
         submitHandler: function(form) {
         $.post( "servlets/editarclientes.php",$("#frmeditarclientes").serialize(), function( data ) {
@@ -716,6 +763,10 @@ $('#frmeditarclientes').validate(
                     title: "",
                     text: "Actualización Cliente exitosamente",
                     type: "success"
+                },function(r){
+                    if(r){
+                        location.replace("clientes.php")
+                    }
                 });
             }else{
                 swal({
