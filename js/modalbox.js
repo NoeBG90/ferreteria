@@ -1,23 +1,59 @@
 $(document).ready(function() {
 
-$("#btnvalidaproductocot").click(function(){
-                 $.post("servlets/buscaproducto.php",
-                     {producto:$("#idproductocot").val(),operacion: $("input[name=radioInline]:checked").val() },function( data ){
-                         console.log(data);
-                         
-                             $.fancybox({
-                                'width': '60%',
-                                 'height': '80%',
-                                 'autoScale': true,
-                                 'transitionIn': 'fade',
-                                 'transitionOut': 'fade',
-                                 'href': 'mostrarproducto_cotiza.php?producto='+data,
-                                 'type': 'iframe'
-                             });
-                         
-                     });
-             });
+    $("#btnvalidaproductocot").click(function() {
+        if (typeof $("input[name=radioInline]:checked").val() === "undefined") {
+            swal({
+                title: "¡Aviso!",
+                text: "Es necesario seleccionar el tipo de operacion.",
+                type: "warning"
+            });
+            return;
+        }
 
+        $.post("servlets/buscaproducto.php",{
+            producto:$("#idproductocot").val(),operacion: $("input[name=radioInline]:checked").val() },function( data ){
+            console.log(data);
+                         
+            $.fancybox({
+                'width': '60%',
+                'height': '80%',
+                'autoScale': true,
+                'transitionIn': 'fade',
+                'transitionOut': 'fade',
+                'href': 'mostrarproducto_cotiza.php?producto='+data,
+                'type': 'iframe'
+            });
+        });
+    });
+
+    $("#btnrecuperaoperacion").click(function() {
+        if (typeof $("input[name=radioInline]:checked").val() === "undefined") {
+            swal({
+                title: "¡Aviso!",
+                text: "Es necesario seleccionar el tipo de operacion.",
+                type: "warning"
+            });
+            return;
+        }
+        var operacion;
+        if($("#rbtnpedido").is(":checked")){
+            operacion = 'Cotizacion';
+        }else if($("#rbtnventa").is(":checked")){
+            operacion = 'Pedido';
+        }else{
+            return;
+        }
+
+        $.fancybox({
+            'width': '60%',
+            'height': '80%',
+            'autoScale': true,
+            'transitionIn': 'fade',
+            'transitionOut': 'fade',
+            'href': 'mostraroperacion.php?operacion='+operacion,
+            'type': 'iframe'
+        });
+    });
 
 $("#btnvalidaproductocot_edit").click(function(){
                  $.post("servlets/buscaproducto.php",

@@ -25,19 +25,15 @@
     include "conexion/conexion.php";
     $conexio =   conectar_bd();
     $query = "SELECT p.*,fp.familia FROM productos p, familia_producto fp WHERE p.id_familia=fp.id_familia and imagen_producto !='' and (producto like '%" . $_GET['producto'] . "%' or SKU like '%" . $_GET['producto'] . "%')";
-
     $result = $conexio->query($query);
     ?>
     <div id="wrapper">
         <div class="gray-bg">
-
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-sm-6">
                     <h2>Selector de Productos</h2>
-
                 </div>
                 <div class="col-sm-6">
-
                 </div>
             </div>
 
@@ -54,7 +50,6 @@
                                     <th data-hide="phone">Modelo</th>
                                     <th data-hide="phone">$ Venta</th>
                                     <th class="text-right" data-sort-ignore="true">Action</th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -70,12 +65,8 @@
                                         <td><?php echo $fila['modelo']; ?></td>
                                         <td><?php echo $fila['precio_venta']; ?></td>
                                         <td>
-
                                             <a class="fa fa-shopping-cart addcar" id="<?php echo $fila['id_producto']; ?>"></a>
                                         </td>
-                                        <!--<td><div class="btn-group">
-                            <a href="agregar-productoscom.php?idprodu=<?php echo $fila['id_producto']; ?>" class="btn-white btn btn-xs">Agregar</a>
-                        </div></td>-->
                                     </tr>
                                 <?php
                                 }
@@ -106,23 +97,19 @@
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
-
-
     <script type="text/javascript">
         $(document).ready(function() {
             $(".addcar").click(function() {
                 console.log(this.id);
-
-                $.post("servlets/calculadora_edita_cotizacion.php", {
-                    producto: this.id
+                $.post("servlets/actualizarcantidad_cotiza_edicion.php", {
+                    producto: this.id,
+                    tipo: 'agregar'
                 }, function(data) {
                     console.log(data);
                     window.parent.$('#tbcotiza_edicion tbody').html(data);
-
+                    window.parent.CallFunctionActualizarTablaCotiza();
                 });
-
             });
-
         });
     </script>
     <!--DataTable -->
@@ -131,7 +118,6 @@
 
     <!--Tables -->
     <script type="text/javascript" src="js/tables.js"></script>
-
 </body>
 
 </html>

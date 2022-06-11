@@ -1,12 +1,23 @@
 .alineacion {
-	word-wrap: break-word;
-	font-weight: bold;
+  word-wrap: break-word;
+  font-weight: bold;
 }
 .tamanos {
-	display: grid;
-	grid-template-columns: auto;
-	width: 100%;
-	text-align: center;
-	border: 1px solid gainsboro;
-	
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+  text-align: center;
+  border: 1px solid gainsboro;
+}
+
+.cotizacion > td {
+  border: 1px solid black;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.inputEdit {
+  width: 90%!important;
+  padding-left: 5px!important;
+  padding-right: 5px!important;
 }

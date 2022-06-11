@@ -25,8 +25,10 @@
     include "conexion/conexion.php";
 
     $conexio =   conectar_bd();
-    $params = explode("|", $_GET['producto']);
-    $query = "SELECT p.*,fp.familia FROM productos p, familia_producto fp WHERE p.id_familia=fp.id_familia and imagen_producto !='' and (producto like '%" . $params[0] . "%' or SKU like '%" . $params[0] . "%')";
+    $params = $_GET['operacion'];
+    $query = "select o.id_operacion, o.folio_operacion, c.nombre as nombre_cliente, e.nombre as nombre_empleado, o.vigencia_operacion, o.tiempo_entrega, o.total, o.estatus, o.fecha_registro, o.fecha_actualizacion, o.metodo_pago from operaciones o, clientes c , empleados e
+    where o.id_cliente = c.id_cliente and o.id_empleado = e.id_empleado and tipo_operacion LIKE '%" . $params . "%' ";
+    print_r($query);
     $result = $conexio->query($query);
     ?>
 
@@ -34,7 +36,7 @@
         <div class="gray-bg">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-sm-6">
-                    <h2>Selector de Productos</h2>
+                    <h2>Selector de <?php echo $params[0] ?></h2>
                 </div>
                 <div class="col-sm-6">
                 </div>
@@ -46,12 +48,12 @@
                         <table id="productoscompra" class="table table-stripped table-bordered table-hover dt-responsive nowrap" data-page-size="15">
                             <thead>
                                 <tr>
-                                    <th data-toggle="true">Producto</th>
-                                    <th data-hide="phone">SKU</th>
-                                    <th data-hide="phone,tablet">Stock</th>
-                                    <th data-hide="phone,tablet">Marca</th>
-                                    <th data-hide="phone">Modelo</th>
-                                    <th data-hide="phone">$ Venta</th>
+                                    <th data-toggle="true">Folio</th>
+                                    <th data-hide="phone">Cliente</th>
+                                    <th data-hide="phone,tablet">Empleado</th>
+                                    <th data-hide="phone,tablet">Monto</th>
+                                    <th data-hide="phone">Estatus</th>
+                                    <th data-hide="phone">Pago</th>
                                     <th class="text-right" data-sort-ignore="true">Action</th>
                                 </tr>
                             </thead>
@@ -61,24 +63,13 @@
                                 while ($fila = $result->fetch_assoc()) {
                                 ?>
                                     <tr>
-                                        <td><?php echo $fila['producto']; ?></td>
-                                        <td><?php echo $fila['SKU']; ?></td>
-                                        <td><?php echo $fila['stock']; ?></td>
-                                        <td><?php echo $fila['marca']; ?></td>
-                                        <td><?php echo $fila['modelo']; ?></td>
-                                        <td><?php echo $fila['precio_venta']; ?></td>
-                                        <td>
-                                            <?php
-                                            if ($params[1] != "Cotizacion" && $fila['stock'] > 0) { ?>
-                                                <a class="fa fa-shopping-cart addcar" id="<?php echo $fila['id_producto']; ?>"></a>
-                                            <?php
-                                            } else if ($params[1] == "Cotizacion") {
-                                            ?>
-                                                <a class="fa fa-shopping-cart addcar" id="<?php echo $fila['id_producto']; ?>"></a>
-                                            <?php
-                                            }
-                                            ?>
-                                        </td>
+                                        <td><?php echo $fila['folio_operacion']; ?></td>
+                                        <td><?php echo $fila['nombre_cliente']; ?></td>
+                                        <td><?php echo $fila['nombre_empleado']; ?></td>
+                                        <td><?php echo $fila['total']; ?></td>
+                                        <td><?php echo $fila['estatus']; ?></td>
+                                        <td><?php echo $fila['metodo_pago']; ?></td>
+                                        <td class="text-center"><a class="fa fa-history fa-lg addOpe" id="<?php echo $fila['id_operacion']; ?>"></a></td>
                                     </tr>
                                 <?php
                                 }
@@ -112,17 +103,10 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $(".addcar").click(function() {
-                console.log(this.id);
-                $.post("servlets/calculadora_cotizacion.php", {
-                        producto: this.id,
-                        tipo: 'agregar'
-                    },
-                    function(data) {
-                        console.log("Add Cart: " + data);
-                        window.parent.$('#tbcotiza tbody').html(data);
-                        window.parent.CallFunctionActualizarCotiza();
-                    });
+            $(".addOpe").click(function() {
+                var id = $(this).attr('id');
+                console.log("di click, ", id);
+                window.parent.CallFunctionRecuperarOperacion(id);
             });
         });
     </script>

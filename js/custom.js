@@ -1,18 +1,19 @@
 $(document).ready(function() {
 
     actualizarTabla();
+    actualizarTablaCotizacion();
     
-    console.log(localStorage.getItem("Operacion"));
-
     console.log(localStorage.getItem("pagina"));
-
-    if(localStorage.getItem("pagina")=="registro_operacion"){
+    if(localStorage.getItem("pagina") == "registro_operacion"){
         //if(localStorage.getItem("Operacion")!= undefined && localStorage.getItem("pagina")==undefined){
         console.log("Entra al selector");
         $("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']").click();
         // $("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']").prop('checked', true);
         ShowHideDiv($("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']"));
         //}
+    }
+    if(localStorage.getItem("pagina") == "editar_cotizacion"){
+        actualizarTablaCotizacionEdicion();
     }
 
     $('#txtfecha_compra').datepicker({
@@ -28,50 +29,31 @@ $(document).ready(function() {
     $('#slsproveedor').select2();
     //Bloque Cotizaciones
 
-    function actualizarTablaCotizacion(){
+    function actualizarTablaCotizacion()
+    {
         console.log("Entra Ctoizacion...");
-        
-        var cantidades=[];
-        var precios=[];
-        var preciosTotal=[];
-        var total = 0;
-        var descuentos_total=0;
-        var descuentos= [];
-        var porcentual=0;
-
-        $("#tbcotiza tbody > tr ").each(function(){
-            
-            var id = Number($(this).find('.id').text());
-            var cantidad=Number($(this).find('.cantidades').val());
-            var preciocompra=Number($(this).find('.precio_compra').val());
-            
-            //console.log(cantidad);
-            cantidades.push(cantidad);
-            
-            var precio=Number($(this).find('.precios').val());
-            precios.push(precio);
-
-            var descuento = Number($(this).find('.descuentos').val());
-            descuentos.push(descuento);
-            porcentual=descuento/100;
-            
-            //console.log(descuento);
-            //console.log(porcentual);
-
-            var total_unitario=cantidad*precio;
-            //console.log("----------------Descuento------------------");
-            //console.log((total_unitario*(100-descuento))/100);
-
-            //console.log("----------------Descuento------------------");
-            if(descuento!=0){
-                total_unitario=(total_unitario*(100-descuento))/100;
-                descuento=(total_unitario*(descuento))/100;
+        var subTotal = 0;
+        var descuentoTotal=0;
+        $("#tbcotiza tbody > tr ").each(function(id)
+        {
+            if(isNaN(Number($(this).find('.cantidades').val()))){
+                return false;
             }
 
-            preciosTotal.push(total_unitario);
+            var cantidad=Number($(this).find('.cantidades').val());
+            var precio=Number($(this).find('.precios').val());
+            var descuento = Number($(this).find('.descuentos').val());
+            var preciocompra = Number($(this).find('.precio_compra').val());
 
-            console.log(descuento, preciocompra);
-            if(descuento<=preciocompra){
+            var total_unitario = cantidad * precio;
+            var total_descuento =  (descuento / 100) * total_unitario;
+            var precio_con_descuento =  total_unitario - total_descuento;
+            var precio_total_compra  = preciocompra * cantidad;
+
+            console.log("GJG1. ",id, cantidad, precio, descuento, preciocompra);
+            console.log("GJG2. ",total_unitario, total_descuento, precio_con_descuento, precio_total_compra);
+            console.log("GJG. ",precio_con_descuento, precio_total_compra);
+            if(false /*descuento<=preciocompra*/){
                 console.log("Precio superado");
                 swal({
                     title: "",
@@ -86,33 +68,45 @@ $(document).ready(function() {
                 });
             }
 
-            //console.log(total_unitario);
-            $(this).find('.subtotal').val('$'+total_unitario);
-            total+=total_unitario;
-            descuentos_total+=descuento;
-            $.post( "servlets/actualizarcantidad_cotiza.php", {'cantidad':cantidad,'posicion':id,'precio':precio,'descuento':Number($(this).find('.descuentos').val()),'subtotal':total_unitario},
+            subTotal += total_unitario;
+            descuentoTotal += total_descuento;
+            $.post( "servlets/calculadora_cotizacion.php", 
+                {'cantidad':cantidad,'posicion':id,'precio':precio,'descuento':descuento,'subtotal':precio_con_descuento, tipo:'actualizar'},
                 function( data ) {
-                    console.log(data);
+                    console.log("respuesta. Cargando. ",data);
+                    $('#tbcotiza tbody').html(data);
                 }
             );
         });
-
-        $('#subtotal_cotiza').val(total);
+        
         var iva=$("#iva_cotiza").children("option:selected").val();
-        //console.log(iva+"IVA");
-        var subtotal_cotizacion=$("#subtotal_cotiza").val();
-        //console.log(subtotal_cotizacion+"Subtotal");
-        var total_iva=(iva/100)*total;
-        $("#iva_cotizacion").val(total_iva);
-        var totalcotizacion=Number(subtotal_cotizacion)+Number(total_iva);
-        $("#total_cotiza").val(totalcotizacion);
-        $("#txtdescuentocot").val(descuentos_total);
+        var total_iva= (iva/100) * subTotal;
+        console.log(subTotal, total_iva, descuentoTotal);
+        var totalcotizacion = (Number(subTotal) + Number(total_iva)) - descuentoTotal;
+
+        $('#subtotal_cotiza').val(parseFloat(Math.round(subTotal * 100) / 100).toFixed(2));
+        $("#iva_cotizacion").val(parseFloat(Math.round(total_iva * 100) / 100).toFixed(2));
+        $("#total_cotiza").val(parseFloat(Math.round(totalcotizacion * 100) / 100).toFixed(2));
+        $("#txtdescuentocot").val(parseFloat(Math.round(descuentoTotal * 100) / 100).toFixed(2));
     };
 
-    actualizarTablaCotizacion();
     $("#tbcotiza").on('change', function(){
+        console.log("onChange...");
         actualizarTablaCotizacion();
     });
+
+    window.CallFunctionActualizarCotiza = function CallFunctionActualizarCotiza(){
+        actualizarTablaCotizacion();
+    }
+
+    window.eliminarCotizacion =  function eliminarCotizacion(id){
+        $('table#tbcotiza tr#'+id).remove();
+        $.post( "servlets/calculadora_cotizacion.php",{'id':id,tipo:'eliminar'}, function( data ) 
+        {
+            window.parent.$('#tbcotiza tbody').html(data);
+            window.parent.CallFunctionActualizarCotiza();
+         });
+    }
 
 
 
@@ -154,147 +148,91 @@ $(document).ready(function() {
 
             });
 
-
-
-
-
-        ////Bloque modificar cotización
-
-        function actualizarTablaCotizacionEdicion(){
-
-              //console.log("Entra");
-
-              var cantidades=[];
-
-              var precios=[];
-
-              var preciosTotal=[];
-
-              var total = 0;
-
-              var descuentos_total=0;
-
-              var descuentos= [];
-
-              var porcentual=0;
-
-              $("#tbcotiza_edicion tbody > tr ").each(function(){
-
-                var id = Number($(this).find('.id').text());
-
-                var cantidad=Number($(this).find('.cantidades').val());
-
-                //console.log(cantidad);
-
-                cantidades.push(cantidad);
-
-
-
-                var precio=Number($(this).find('.precios').val());
-
-                precios.push(precio);
-
-
-
-                var descuento = Number($(this).find('.descuentos').val());
-
-                descuentos.push(descuento);
-
-                porcentual=descuento/100;
-
-                //console.log(descuento);
-
-                //console.log(porcentual);
-
-
-
-                var total_unitario=cantidad*precio;
-
-                //console.log("----------------Descuento------------------");
-
-                //console.log((total_unitario*(100-descuento))/100);
-
-                //console.log("----------------Descuento------------------");
-
-                if(descuento!=0){
-
-                    total_unitario=(total_unitario*(100-descuento))/100;
-
-                    descuento=(total_unitario*(descuento))/100;
-
-                }
-
-                preciosTotal.push(total_unitario);
-
-                //console.log(total_unitario);
-
-                $(this).find('.subtotal').val('$'+total_unitario);
-
-                total+=total_unitario;
-
-                descuentos_total+=descuento;
-
-                $.post( "servlets/actualizarcantidad_cotiza_edicion.php",
-
-                    {'cantidad':cantidad,'posicion':id,'precio':precio,
-
-                    'descuento':Number($(this).find('.descuentos').val()),'subtotal':total_unitario
-
-                }, function( data ) {
-
-                   //console.log(data);
-
+    //Bloque modificar cotización
+    function actualizarTablaCotizacionEdicion(){
+        var subTotal = 0;
+        var descuentoTotal=0;
+        console.log("Entra en consulta Editar");
+        $("#tbcotiza_edicion tbody > tr ").each(function(id){
+            if(isNaN(Number($(this).find('.cantidades').val()))){
+                return false;
+            }
+    
+            var cantidad= Number($(this).find('.cantidades').val());
+            var precio= Number($(this).find('.precios').val());
+            var descuento = Number($(this).find('.descuentos').val());
+            var preciocompra = Number($(this).find('.precio_compra').val());
+    
+            var total_unitario = cantidad * precio;
+            var total_descuento =  (descuento / 100) * total_unitario;
+            var precio_con_descuento =  total_unitario - total_descuento;
+            var precio_total_compra  = preciocompra * cantidad;
+    
+            console.log("GJG1. ",id, cantidad, precio, descuento, preciocompra);
+            console.log("GJG2. ",total_unitario, total_descuento, precio_con_descuento, precio_total_compra);
+            console.log("GJG. ",precio_con_descuento, precio_total_compra);
+            if(false /*descuento<=preciocompra*/){
+                console.log("Precio superado");
+                swal({
+                    title: "",
+                    text: "El precio del producto no puede superar el precio de compra",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "SI",
+                    closeOnConfirm: false
+                }, function () {
+    
                 });
+            }
+    
+            subTotal += total_unitario;
+            descuentoTotal += total_descuento;
 
-              });
+            $.post( "servlets/actualizarcantidad_cotiza_edicion.php",
+                {'cantidad':cantidad,'posicion':id,'precio':precio, 'descuento':descuento,'subtotal':precio_con_descuento,tipo:'modificar'}, 
+                    function( data ) {
+                        console.log("respuesta. Cargando Edit. ",data);
+                        $('#tbcotiza_edicion tbody').html(data);
+                    }
+            );
 
-              
+        });
 
-              $('#subtotal_cotiza').val(total);
+        console.log("Valores a trabajar: " , subTotal , descuentoTotal);
+        var iva=$("#iva_cotiza_edit").children("option:selected").val();
+        var total_iva= (iva/100) * subTotal;
+        console.log(subTotal, total_iva, descuentoTotal);
+        var totalcotizacion = (Number(subTotal) + Number(total_iva)) - descuentoTotal;
 
-              var iva=$("#iva_cotiza_edicion").children("option:selected").val();
-
-              //console.log(iva+"IVA");
-
-              var subtotal_cotizacion=$("#subtotal_cotiza").val();
-
-              //console.log(subtotal_cotizacion+"Subtotal");
-
-              var total_iva=(iva/100)*total;
-
-
-
-              $("#iva_cotizacion").val(total_iva);
-
-              var totalcotizacion=Number(subtotal_cotizacion)+Number(total_iva);
-
-              $("#total_cotiza").val(totalcotizacion);
-
-              $("#txtdescuentocot").val(descuentos_total);
-
-          };
+        $('#subtotal_cotiza_edit').val(parseFloat(Math.round(subTotal * 100) / 100).toFixed(2));
+        $("#descuentocot_edit").val(parseFloat(Math.round(descuentoTotal * 100) / 100).toFixed(2));
+        $("#iva_cotizacion_edit").val(parseFloat(Math.round(total_iva * 100) / 100).toFixed(2));
+        $("#total_cotiza_edit").val(parseFloat(Math.round(totalcotizacion * 100) / 100).toFixed(2));
+    };
 
 
-
+    $("#tbcotiza_edicion").on('change', function(){
+        console.log("Actualiza tabla edicion");
         actualizarTablaCotizacionEdicion();
+    });
 
+    $("#iva_cotiza_edicion").change(function(){
+        actualizarTablaCotizacionEdicion();
+    });
 
+    window.CallFunctionActualizarTablaCotiza = function CallFunctionActualizarTablaCotiza(){
+        actualizarTablaCotizacionEdicion();
+    }
 
-        $("#tbcotiza_edicion").on('change', function(){
-
-            //console.log("Actualiza tabla edicion");
-
+    window.eliminarCotizacionEdit =  function eliminarCotizacionEdit(id){
+        $('table#tbcotiza tr#'+id).remove();
+        $.post( "servlets/actualizarcantidad_cotiza_edicion.php",{'id':id,tipo:'eliminar'}, function( data ) 
+        {
+            window.parent.$('#tbcotiza_edicion tbody').html(data);
             actualizarTablaCotizacionEdicion();
-
-          });
-
-
-
-        $("#iva_cotiza_edicion").change(function(){
-
-              actualizarTablaCotizacionEdicion();
-
-          });
+         });
+    }
 
     ///Bloque Compras
     function actualizarTabla()
@@ -304,44 +242,42 @@ $(document).ready(function() {
         var preciosTotal=[];
         var total = 0;
 
-        var count = $("#tbcompra tbody > tr").children().length;
-        if(count > 1){
-            $("#tbcompra tbody > tr ").each(function(){
-                var id = Number($(this).find('.id').text());
-                var cantidad=Number($(this).find('.cantidades').val());
-                cantidades.push(cantidad);
 
-                var precio=Number($(this).find('.precios').val());
-                precios.push(precio);
+        $("#tbcompra tbody > tr ").each(function(){
+            if(isNaN(Number($(this).find('.cantidades').val()))){
+                return false;
+            }
+
+            var id = Number($(this).find('.id').text());
+            var cantidad=Number($(this).find('.cantidades').val());
+            //cantidades.push(cantidad);
+
+            var precio=Number($(this).find('.precios').val());
+            //precios.push(precio);
                 
-                var total_unitario=cantidad*precio;
-                preciosTotal.push(total_unitario);
+            var total_unitario=cantidad*precio;
+            //preciosTotal.push(total_unitario);
 
-                $(this).find('.subtotal').val('$'+total_unitario);
-                total += total_unitario;
+            $(this).find('.subtotal').val('$'+total_unitario);
+            total += total_unitario;
 
-                $.post( "servlets/actualizarcantidad.php",{'cantidad':cantidad,'posicion':id,'precio':precio}, function( data ) 
-                {   
-                    console.log("Res: ",data);
-                });
+            $.post( "servlets/actualizarcantidad.php",{'cantidad':cantidad,'posicion':id,'precio':precio}, function( data ) 
+            {   
+                console.log("Res: ",data);
             });
+        });
 
-            //Aqui seteamos total
-            $('#subtotal_compra').val(total);
-            var iva=$("#iva_compra").children("option:selected").val();
-            //console.log(iva+"IVA");
-            var subtotal_compra=$("#subtotal_compra").val();
-            //console.log(subtotal_compra+"Subtotal");
-            var total_iva=(iva/100)*total;
+        //Aqui seteamos total
+        $('#subtotal_compra').val(total);
+        var iva=$("#iva_compra").children("option:selected").val();
+        //console.log(iva+"IVA");
+        var subtotal_compra=$("#subtotal_compra").val();
+        //console.log(subtotal_compra+"Subtotal");
+        var total_iva=(iva/100)*total;
 
-            $("#iva_monto").val(total_iva);
-            var totalcompra=Number(subtotal_compra)+Number(total_iva);  
-            $("#total_compra").val(totalcompra);
-        }else{
-            $('#subtotal_compra').val(0);
-            $("#iva_monto").val(0);
-            $("#total_compra").val(0);
-        }
+        $("#iva_monto").val(total_iva);
+        var totalcompra=Number(subtotal_compra)+Number(total_iva);  
+        $("#total_compra").val(totalcompra);
     };
 
     $("#tbcompra").on('change', function(){
@@ -389,45 +325,25 @@ $(document).ready(function() {
 
 
 
-            //mensaje de bienvenida
-
-            
-
-
-
+    //mensaje de bienvenida
     function ShowHideDiv(radio) {
-
-        //console.log("Entra funcion");
-
-    $("#btnvalidaproductocot").prop("disabled", false);
-
-
-
-        var rbtncotizacion = document.getElementById("rbtncotizacion");
-
-        var rbtnpedido = document.getElementById("rbtnpedido");
-
-        var rbtnventa = document.getElementById("rbtnventa");
-
+        $("#btnvalidaproductocot").prop("disabled", false);
         
+        var rbtncotizacion  = document.getElementById("rbtncotizacion");
+        var rbtnpedido      = document.getElementById("rbtnpedido");
+        var rbtnventa       = document.getElementById("rbtnventa");
+        var dvRecCot        = document.getElementById("dvRecCot");
 
-        var dvRecCot = document.getElementById("dvRecCot");
-
-        
-
-        //dvRecCot.style.display = rbtnpedido.checked ? "block" : "none";
+        dvRecCot.style.display = rbtnpedido.checked || rbtnventa.checked ? "block" : "none";
+        var text = rbtnpedido.checked ? 'Recuperar Cotización' : rbtnventa.checked ? 'Recuperar Pedido' : '';
+        var htmlValue = '<i class="fa fa-search-plus"></i> ' + text;
+        $("#btnrecuperaoperacion").html(htmlValue);
 
         //dvRecPed.style.display = rbtnventa.checked ? "block" : "none";
-
         
-
         $("#titulooperacion").text(rbtnpedido.checked ? "Registrar Pedido" : rbtnventa.checked ? "Registrar Venta" : rbtncotizacion.checked ? "Registrar Cotización" : "Registrar Operación");
-
         $("#detalleoperacion").text(rbtnpedido.checked ? "Registrar Pedido" : rbtnventa.checked ? "Registrar Venta" : rbtncotizacion.checked ? "Registrar Cotización" : "Registrar Operación");
-
         $("#seccionOperaciones").text(rbtnpedido.checked ? "Registrar Pedido" : rbtnventa.checked ? "Registrar Venta" : rbtncotizacion.checked ? "Registrar Cotización" : "Registrar Operación");
-
-        
 
     };
 
@@ -435,61 +351,36 @@ $(document).ready(function() {
 
 
 
-$('input[name="radioInline"]').change(function(){
+    $('input[name="radioInline"]').change(function()
+    {
+        console.log($('input[name="radioInline"]:checked').val());
+        console.log(localStorage.getItem("Operacion"));
+        ShowHideDiv(this);
+        if(localStorage.getItem("Operacion") != null 
+            && (localStorage.getItem("Operacion") != $('input[name="radioInline"]:checked').val()))
+        {
+            swal({
+                title: "",
+                text: "Desea salir? Los datos capturados se perderan",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "SI",
+                closeOnConfirm: false
+                }, function (res) {
+                    if(res){
+                        location.replace("clearsessionoperaciones.php");
+                        localStorage.setItem("Operacion",$('input[name="radioInline"]:checked').val());
+                    }else{
+                        var $radios = $('input:radio[name=radioInline]');
+                        var value = localStorage.getItem("Operacion");
+                        $radios.filter('[value='+value+']').prop('checked', true);
+                    }
+                });
+        }
+    });
 
-    //console.log("Entra al click del radio ");
-
-    //console.log(this);
-
-    ShowHideDiv(this);
-
-
-
-    if(localStorage.getItem("Operacion")!=null && 
-
-        (localStorage.getItem("Operacion")!=$('input[name="radioInline"]:checked').val())){
-
-        //console.log("Enttra validacion");
-
-         swal({
-
-                                  title: "",
-
-                                  text: "Desea salir? Los datos capturados se perderan",
-
-                                  type: "warning",
-
-                                  showCancelButton: true,
-
-                                  confirmButtonColor: "#DD6B55",
-
-                                  confirmButtonText: "SI",
-
-                                  closeOnConfirm: false
-
-                              }, function () {
-
-                                location.replace("clearsessionoperaciones.php");
-
-                              });
-
-    }
-
-    //console.log($('input[name="radioInline"]:checked').val());
-
-    localStorage.setItem("Operacion",$('input[name="radioInline"]:checked').val());
-
-
-
-
-
-
-
-});
-
-
-
-        $("#btncancelarcotizacion").click(function(){
+    $("#btncancelarcotizacion").click(function(){
 
             //console.log("entra al clcik");
 
@@ -523,194 +414,84 @@ $('input[name="radioInline"]').change(function(){
 
 
 
-    $("#btnrecupcot").click(function(){
+    function recuperarOperacion(id){
 
-            //console.log("Recupera cotizacion");
+        //console.log("Recupera cotizacion");
+        $("#btnvalidaproductocot").prop("disabled", true);
 
-                $("#btnvalidaproductocot").prop("disabled", true);
+        //console.log($("#slscotizaciones  option:selected").val());
+        $.post("servlets/recuperacotizacion.php", {id_operacion: id },
+            function( data ){
+                console.log("GJG", data);
+                jsoncotizacion=JSON.parse(data);
+                $('#tbcotiza tbody').html(data.tabla);
 
-
-
-            //console.log($("#slscotizaciones  option:selected").val());
-
-            $.post("servlets/recuperacotizacion.php",
-
-                     {id_operacion:$("#slscotizaciones option:selected").val() },function( data ){
-
-                         //console.log(data);
-
-                 jsoncotizacion=JSON.parse(data);
-
-                
-
-                 $("#slsclientecot option").each(function(){
-
-                    
-
-                    if ($(this).val() == jsoncotizacion.header.idempleado ){        
-
-                    
-
-                     $("#slsclientecot option[value="+$(this).val()+"]").attr("selected",true);
-
-                     $( "#slsclientecot" ).change();
-
-                          
-
-
-
+                $("#slsclientecot option").each(function(){
+                    if ($(this).val() == jsoncotizacion.header.idcliente ){
+                        $("#slsclientecot option[value="+$(this).val()+"]").attr("selected",true);
+                        $( "#slsclientecot" ).change();
                     }
-
-                 });
-
-
-
-
+                });
 
                 $("#txtvigenciacot").val(jsoncotizacion.header.vigencia);
-
                 $("#txtentregacot").val(jsoncotizacion.header.tiempo_entrega);
-
                 $("#txtconsideracionescot").val(jsoncotizacion.header.consideraciones);
-
                 $('#tbcotiza tbody').html(jsoncotizacion.tabla);
-
                 $("input[name=rbtnpago][value='"+jsoncotizacion.header.metodo_pago+"']").prop("checked",true);
-
                 $( "#tbcotiza" ).change();
-
-
-
                 $("#recuperado").val("1");
-
-
-
                 $("#idrecuperado").val(jsoncotizacion.header.foliocotizacion);
-
                 localStorage.setItem("FlagDatos","1");
 
                 //console.log(localStorage.getItem("FlagDatos"));
-
-                            swal({
-
-                                title: "OK!",
-
-                                text: "Operacion recuperada.",
-
-                                type: "success"
-
-                            });
-
-                             
-
-                         
-
-                     });
-
-
-
+                swal({
+                    title: "OK!",
+                    text: "Operacion recuperada.",
+                    type: "success"
+                }, function(){
+                    $.fancybox.close();
+                });
         });
+    }
 
+    window.CallFunctionRecuperarOperacion = function CallFunctionRecuperarOperacion(id){
+        console.log("Si entro aquii id", id);
+        recuperarOperacion(id);
+    }
 
-
-//recuperar pedido
-
-    $("#btnrecupped").click(function(){
-
-            //console.log("Recupera pedido");
-
-                $("#btnvalidaproductocot").prop("disabled", true);
-
-
-
-            //console.log($("#slspedidos  option:selected").val());
-
-            $.post("servlets/recuperacotizacion.php",
-
-                     {id_operacion:$("#slspedidos option:selected").val() },function( data ){
-
-                         //console.log(data);
-
-                 jsonpedido=JSON.parse(data);
-
-                
-
-                 $("#slsclientecot option").each(function(){
-
-                    
-
-                    if ($(this).val() == jsonpedido.header.idempleado ){        
-
-                    
-
-                     $("#slsclientecot option[value="+$(this).val()+"]").attr("selected",true);
-
-                     $( "#slsclientecot" ).change();
-
-                          
-
-
-
+    //recuperar pedido
+    $("#btnrecupped").click(function()
+    {
+        $("#btnvalidaproductocot").prop("disabled", true);
+        $.post("servlets/recuperacotizacion.php", {id_operacion:$("#slspedidos option:selected").val() },
+            function( data ){
+                console.log("RFG:",data);
+                jsonpedido=JSON.parse(data);
+                $('#tbcotiza tbody').html(data.tabla);
+                $("#slsclientecot option").each(function(){
+                    if ($(this).val() == jsonpedido.header.idcliente ){
+                        $("#slsclientecot option[value="+$(this).val()+"]").attr("selected",true);
+                        $( "#slsclientecot" ).change();
                     }
+                });
 
-                 });
-
-
-
-
-
-                 $("#txtvigenciacot").val(jsonpedido.header.vigencia);
-
-                 $("#txtentregacot").val(jsonpedido.header.tiempo_entrega);
-
-                 $("#txtconsideracionescot").val(jsonpedido.header.consideraciones);
-
+                $("#txtvigenciacot").val(jsonpedido.header.vigencia);
+                $("#txtentregacot").val(jsonpedido.header.tiempo_entrega);
+                $("#txtconsideracionescot").val(jsonpedido.header.consideraciones);
                 $('#tbcotiza tbody').html(jsonpedido.tabla);
-
                 $("input[name=rbtnpago][value='"+jsonpedido.header.metodo_pago+"']").prop("checked",true);
+                $( "#tbcotiza" ).change();
+                $("#recuperado").val("1");
+                $("#idrecuperado").val(jsonpedido.header.foliocotizacion);
 
-                  $( "#tbcotiza" ).change();
+                localStorage.setItem("FlagDatos","1");
+                actualizarTablaCotizacion();
+                swal({
+                    title: "OK!",
+                    text: "Operación recuperada.",
+                    type: "success"
+                });
 
-
-
-                  $("#recuperado").val("1");
-
-                  $("#idrecuperado").val(jsonpedido.header.foliocotizacion);
-
-
-
-                  localStorage.setItem("FlagDatos","1");
-
-                //console.log(localStorage.getItem("FlagDatos"));
-
-
-
-
-
-                            swal({
-
-                                title: "OK!",
-
-                                text: "Operación recuperada.",
-
-                                type: "success"
-
-                            });
-
-                             
-
-                         
-
-                     });
-
-
-
+            });
         });
-
-    
-
-    
-
-
-
-});
+    });

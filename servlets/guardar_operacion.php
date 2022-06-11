@@ -32,16 +32,17 @@ VALUES('', " . $_POST['slsclientecot'] . ", " . $_POST['ide'] . ", '" . $_POST['
 $result = $conexio->query($query);
 $idcotizacion = $conexio->insert_id;
 
-
 $query_folio = "UPDATE operaciones SET folio_operacion='" . $foliocotizacion . $idcotizacion . "' where id_operacion=" . $idcotizacion;
 $resultfoliocot = $conexio->query($query_folio);
-
+//print_r($resultfoliocot);
 if ($result != 0) {
-  for ($i = 0; $i < sizeof($_SESSION['productos_cotizacion']); $i++) {
+  for ($i = 0; $i < sizeof($_SESSION['operacion']['productos']); $i++) {
 
 
     $queryinsertdetcot = "INSERT INTO detalle_operaciones (id_operacion, id_producto, cantidad, precio, descuento, subtotal)
-    VALUES(" . $idcotizacion . ", " . $_SESSION['productos_cotizacion'][$i]->id . ", " . $_SESSION['productos_cotizacion'][$i]->stok . ", " . $_SESSION['productos_cotizacion'][$i]->precio_venta . "," . $_SESSION['productos_cotizacion'][$i]->descuento . "," . $_SESSION['productos_cotizacion'][$i]->subtotal . ");";
+    VALUES(" . $idcotizacion . ", " . $_SESSION['operacion']['productos'][$i]->id . ", " . $_SESSION['operacion']['productos'][$i]->stok . ", " .
+      $_SESSION['operacion']['productos'][$i]->precio_venta . "," . $_SESSION['operacion']['productos'][$i]->descuento . "," .
+      $_SESSION['operacion']['productos'][$i]->subtotal . ");";
 
 
     $result = $conexio->query($queryinsertdetcot);
@@ -49,7 +50,8 @@ if ($result != 0) {
       $conexio->rollback();
     } else {
       if ($_POST['radioInline'] == 'Pedido') {
-        $queryactualizaStock = "UPDATE productos SET stock=stok-" . $_SESSION['productos_cotizacion'][$i]->stok . " WHERE id_producto=" . $_SESSION['productos_cotizacion'][$i]->id;
+        $queryactualizaStock = "UPDATE productos SET stock=stock-" . $_SESSION['operacion']['productos'][$i]->stok . " WHERE id_producto=" .
+          $_SESSION['operacion']['productos'][$i]->id;
         $resultstok = $conexio->query($queryactualizaStock);
         if ($resultstok == 0) {
           $conexio->rollback();
@@ -59,7 +61,7 @@ if ($result != 0) {
         $resultupdate_pedido = $conexio->query($query_updatepedido);
       } elseif ($_POST['radioInline'] == 'Venta') {
         if ($_POST['recuperado'] == 0) {
-          $queryactualizaStock = "UPDATE productos SET stock=stok-" . $_SESSION['productos_cotizacion'][$i]->stok . " WHERE id_producto=" . $_SESSION['productos_cotizacion'][$i]->id;
+          $queryactualizaStock = "UPDATE productos SET stock=stok-" . $_SESSION['operacion']['productos'][$i]->stok . " WHERE id_producto=" . $_SESSION['operacion']['productos'][$i]->id;
           $resultstok = $conexio->query($queryactualizaStock);
           if ($resultstok == 0) {
             $conexio->rollback();
@@ -77,9 +79,5 @@ if ($result != 0) {
 }
 
 $conexio->commit();
-
-
-
-
-
-unset($_SESSION['tabla_cotizacion']);
+$conexio->close();
+unset($_SESSION['operacion']['tabla']);

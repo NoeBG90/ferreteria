@@ -7,7 +7,7 @@ $query2 = "select * from clientes where estatus='Activo' ;";
 $resultclientes = $conexio->query($query2);
 
 $query3 = "SELECT c.id_operacion ,folio_operacion ,c2.nombre as cliente  FROM operaciones c, clientes c2 
-        where c.id_cliente =c2.id_cliente and c.estatus='Autorizada' and tipo_operacion='Cotizacion'";
+        where c.id_cliente =c2.id_cliente and tipo_operacion='Cotizacion'";
 $resultcotizacion = $conexio->query($query3);
 
 $query4 = "SELECT c.id_operacion ,folio_operacion ,c2.nombre as cliente FROM operaciones c, clientes c2 
@@ -75,11 +75,9 @@ $resultpedidos = $conexio->query($query4);
                                     <tbody>
                                         <?php
 
-                                        if (isset($_SESSION['tabla_cotizacion'])) {
-
-                                            echo $_SESSION['tabla_cotizacion'];
+                                        if (isset($_SESSION['operacion']['tabla'])) {
+                                            echo $_SESSION['operacion']['tabla'];
                                         } else {
-
                                         ?>
                                             <tr class="text-center">
                                                 <th colspan="8">No hay productos agregados</th>
@@ -118,34 +116,8 @@ $resultpedidos = $conexio->query($query4);
                                     </div>
                                 </div>
 
-                                <div class="form-group row align-items-left col-sm-12" id="dvRecCot" style="display: none">
-                                    <label class="col-sm-12 text-left" style="display: ruby-text-container;">Recuperar Cotización</label>
-                                    <select class="col-sm-8 select2_demo_3 form-control " name="slscotizaciones" id="slscotizaciones" style="width: 100%; margin: 1rem; text-align: left;">
-                                        <option value="">Cotizaciones</option>
-                                        <?php
-                                        while ($filacotizacion = $resultcotizacion->fetch_assoc()) {
-                                        ?>
-                                            <option value="<?php echo $filacotizacion['id_operacion']; ?>"><?php echo $filacotizacion['folio_operacion'] . " - " . $filacotizacion['cliente']; ?></option>
-                                        <?php
-                                        }
-                                        ?>
-                                    </select>
-                                    <button type="button" class="btn btn-outline btn-info align-items-left " id="btnrecupcot" name="btnrecupcot" style="width: 50%; margin-top: 1rem;">Recuperar</button>
-                                </div>
-
-                                <div class="form-group row align-items-left col-sm-12" id="dvRecPed" style="display: none">
-                                    <label class="col-sm-12 text-left" style="display: ruby-text-container;">Recuperar Pedido</label>
-                                    <select class="col-sm-8 select2_demo_3 form-control " name="slspedidos" id="slspedidos" style="width: 100%; margin: 1rem; text-align: left;">
-                                        <option value="">Pedidos</option>
-                                        <?php
-                                        while ($filapedidos = $resultpedidos->fetch_assoc()) {
-                                        ?>
-                                            <option value="<?php echo $filapedidos['id_operacion']; ?>"><?php echo $filapedidos['folio_operacion'] . " - " . $filapedidos['cliente']; ?></option>
-                                        <?php
-                                        }
-                                        ?>
-                                    </select>
-                                    <button type="button" class="btn btn-outline btn-info" id="btnrecupped" name="btnrecupped" style="width: 50%; margin-top: 1rem;">Recuperar</button>
+                                <div class="form-group" id="dvRecCot" style="display: none">
+                                    <button type="button" class="btn btn-info col-12" id="btnrecuperaoperacion" name="btnrecuperaoperacion"></button>
                                 </div>
 
                                 <hr>
@@ -197,15 +169,15 @@ $resultpedidos = $conexio->query($query4);
                                     <input class="col-sm-7 text-center" type="text" name="txtconsideracionescot" id="txtconsideracionescot">
                                 </div>
 
-                                <div class="form-group row align-items-center">
-                                    <label class="col-sm-5 text-left">Método de Pago</label>
-                                    <div class="col-sm-7 form-group">
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Método de Pago</label>
+                                    <div class="form-group d-flex justify-content-between">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="rbtnpago" value="Efectivo" id="rbtncontado">
                                             <label class="form-check-label text-secondary" for="rbtncontado"><i class="fa fa-money"></i> Efectivo</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="rbtnpago" value="Crédito" id="rbtncredito">
+                                            <input class="form-check-input" type="radio" name="rbtnpago" value="Credito" id="rbtncredito">
                                             <label class="form-check-label text-secondary" for="rbtncredito"><i class="fa fa-dollar (alias)"></i> Crédito</label>
                                         </div>
                                         <div class="form-check form-check-inline">
@@ -218,11 +190,11 @@ $resultpedidos = $conexio->query($query4);
                                 <hr>
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-6 text-left">Subtotal $</label>
-                                    <input class="col-sm-6 text-center" type="text" name="subtotal_cotiza" id="subtotal_cotiza" readonly="true" placeholder="00.00">
+                                    <input class="col-sm-6 text-center" type="text" name="subtotal_cotiza" id="subtotal_cotiza" value="0" readonly="true" placeholder="00.00">
                                 </div>
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-6 text-left">Descuento $</label>
-                                    <input class="col-sm-6 text-center" type="text" name="txtdescuentocot" id="txtdescuentocot" readonly="true" placeholder="00.00">
+                                    <input class="col-sm-6 text-center" type="text" name="txtdescuentocot" id="txtdescuentocot" value="0" readonly="true" placeholder="00.00">
                                 </div>
 
                                 <div class="form-group row align-items-center">
@@ -232,13 +204,13 @@ $resultpedidos = $conexio->query($query4);
                                         <option value="8.00">IVA 8%</option>
                                     </select>
                                     <div class="col-sm-2 text-center"></div>
-                                    <input class="col-sm-6 text-center" type="text" name="iva_cotizacion" id="iva_cotizacion" readonly="true" placeholder="16.00">
+                                    <input class="col-sm-6 text-center" type="text" name="iva_cotizacion" id="iva_cotizacion" value="0" readonly="true" placeholder="16.00">
                                 </div>
 
                                 <hr>
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-6 text-left">Total $</label>
-                                    <input class="col-sm-6 text-center" type="text" name="total_cotiza" id="total_cotiza" readonly="true" placeholder="166.00">
+                                    <input class="col-sm-6 text-center" type="text" name="total_cotiza" id="total_cotiza" value="0" readonly="true" placeholder="166.00">
                                 </div>
 
                                 <div class="form-group row align-items-center">
@@ -299,7 +271,6 @@ $resultpedidos = $conexio->query($query4);
         }
     });
 </script>
-
 
 
 <?php include "footer.php"; ?>

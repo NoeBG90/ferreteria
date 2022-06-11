@@ -120,7 +120,7 @@ $('#frmregistrocotizaciones').validate(
                   closeOnConfirm: false
                 }, function () {
                     $.post( "servlets/guardar_operacion.php",$("#frmregistrocotizaciones").serialize(), function( data ) {
-                    console.log(data);
+                    console.log("Respuesta Save: ", data);
                         if(data==1){
                         mensaje="";
                         url="";
@@ -178,6 +178,7 @@ $('#frmregistrocotizaciones_edicion').validate(
                     confirmButtonText: "SI",
                     closeOnConfirm: false
                 }, function () {
+                    console.log($("#frmregistrocotizaciones_edicion").serialize());
                     $.post( "servlets/guardar_cotizacion_edicion.php",$("#frmregistrocotizaciones_edicion").serialize(), function( data ) {
                         console.log(data);
                             if(data==1){

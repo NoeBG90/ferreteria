@@ -2,37 +2,38 @@
 
 session_start();
 
-if ($_POST['cantidad'] != 'NaN') {
+if (!is_nan(intval($_POST['cantidad']))) {
 
   $contador = 0;
   $tabla = "";
   $cantidad = 0;
 
-  //print_r($_SESSION['productos_cotizacion']);
-  $_SESSION['productos_cotizacion'][$_POST['posicion']]->stok = $_POST['cantidad'];
-  $_SESSION['productos_cotizacion'][$_POST['posicion']]->precio_venta = $_POST['precio'];
-  $_SESSION['productos_cotizacion'][$_POST['posicion']]->descuento = $_POST['descuento'];
-  $_SESSION['productos_cotizacion'][$_POST['posicion']]->subtotal = $_POST['subtotal'];
-
-  //print_r($_SESSION['productos_cotizacion']);
+  $_SESSION['operacion']['productos'][$_POST['posicion']]->stok = $_POST['cantidad'];
+  $_SESSION['operacion']['productos'][$_POST['posicion']]->precio_venta = $_POST['precio'];
+  $_SESSION['operacion']['productos'][$_POST['posicion']]->descuento = $_POST['descuento'];
+  $_SESSION['operacion']['productos'][$_POST['posicion']]->subtotal = $_POST['subtotal'];
 
   $_SESSION['tabla_cotizacion'] = "";
 
-  for ($i = 0; $i < sizeof($_SESSION['productos_cotizacion']); $i++) {
+  for ($i = 0; $i < sizeof($_SESSION['operacion']['productos']); $i++) {
     //print_r($_SESSION['productos_cotizacion'][$i]);
-    $_SESSION['tabla_cotizacion'] .=
-      "<tr>
-        <td class='id' >" . $i . "</td><td >" . $_SESSION['productos_cotizacion'][$i]->sku . "</td>
-        <td >" . $_SESSION['productos_cotizacion'][$i]->producto . "</td>
-        <td > <input type='text' class='cantidades col-sm-9 text-left focusNext' name='txtcantidad'  id='txtcantidad" . $i . "' value='" . $_SESSION['productos_cotizacion'][$i]->stok . "'  tabindex='" . $i . "'></td>
-        <td > <input type='text' name='txtprecioventa' id='txtprecioventa" . $i . "' class='precios col-sm-9 text-left'  value='" . $_SESSION['productos_cotizacion'][$i]->precio_venta . "' readonly >
-              <input type='hidden' nam='hddpreciocompra' id='hddpreciocompra" . $i . "' class='precio_compra' value='" . $_SESSION['productos_cotizacion'][$i]->precio_compra * 1.05 . "' >
+    $subTotal = $_SESSION['operacion']['productos'][$i]->stok * $_SESSION['operacion']['productos'][$i]->precio_venta;
+    $_SESSION['operacion']['tabla'] .=
+      "<tr class='cotizacion' id='" . $i . "'>
+        <td >" . $i . "</td>
+        <td >" . $_SESSION['operacion']['productos'][$i]->sku . "</td>
+        <td >" . $_SESSION['operacion']['productos'][$i]->producto . "</td>
+        <td >
+          <input type='hidden' class='precio_compra'                name='hddpreciocompra'         id='hddpreciocompra" . $i . "' value='" . $_SESSION['operacion']['productos'][$i]->precio_compra * 1.05 . "' >
+          <input type='text' class='cantidades col-sm-9 text-center focusNext' name='txtcantidad'  id='txtcantidad" . $i . "'     value='" . $_SESSION['operacion']['productos'][$i]->stok . "'         ></td>
+        <td > <input type='text' class='precios col-sm-9 text-center' name='txtprecioventa'            id='txtprecioventa" . $i . "'  value='" . $_SESSION['operacion']['productos'][$i]->precio_venta . "' readonly >
         </td>
-        <td > <input type='text' class='descuentos col-sm-9 text-left focusDesc' name='txtdescuento' id='txtdescuento" . $i . "'  value='" . $_SESSION['productos_cotizacion'][$i]->descuento . "'  tabindex='1000" . $i . "'  ></td>
-        <td > <input type='text' class='subtotal col-sm-9 text-left' name='txtsubtotal' id='txtsubtotal" . $i . "' readonly ></td>
+        <td > <input type='text' class='descuentos col-sm-9 text-center focusDesc' name='txtdescuento' id='txtdescuento" . $i . "'    value='" . $_SESSION['operacion']['productos'][$i]->descuento . "'  ></td>
+        <td > <input type='text' class='subtotal col-sm-9 text-center'             name='txtsubtotal'  id='txtsubtotal" . $i . "'     value='" . $subTotal . "' readonly ></td>
+        <td > <button type='button' class='btn btn-danger btnEliminarCotiza' onclick='eliminarCotizacion(" . $i . ")'><i class='fa fa-trash'></i></button> </td>
       </tr>";
   }
-  print_r($_SESSION['tabla_cotizacion']);
+  print_r($_SESSION['operacion']['tabla']);
 } else {
-  print_r($_SESSION['tabla_cotizacion']);
+  print_r($_SESSION['operacion']['tabla']);
 }
