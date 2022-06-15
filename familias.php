@@ -5,6 +5,7 @@ include "conexion/conexion.php";
 $conexio =   conectar_bd();
 $query = "SELECT * FROM familia_producto where estatus='Activo';";
 $result = $conexio->query($query);
+$conexio->close();
 ?>
 
 <div class="row wrapper border-bottom white-bg page-heading">

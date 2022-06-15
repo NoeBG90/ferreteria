@@ -14,7 +14,7 @@ if ($_POST['radioInline'] == 'Cotizacion') {
   $foliocotizacion = "P-" . date('ymd') . "-";
   $mensajeop = "Error al registrar Pedido";
 } elseif ($_POST['radioInline'] == 'Venta') {
-  $status_operacion = "Pendiente Pago";
+  $status_operacion = "Pendiente pago";
   $foliocotizacion = "V-" . date('ymd') . "-";
   $mensajeop = "Error al registrar Venta";
 } else {
@@ -27,8 +27,12 @@ $conexio =  conectar_bd();
 $conexio->autocommit(FALSE);
 
 $query = "INSERT INTO operaciones
-(folio_operacion, id_cliente, id_empleado, vigencia_operacion, tiempo_entrega, consideraciones, subtotal, iva, iva_porcentual, total, estatus, fecha_registro, fecha_actualizacion,metodo_pago,tipo_operacion)
-VALUES('', " . $_POST['slsclientecot'] . ", " . $_POST['ide'] . ", '" . $_POST['txtvigenciacot'] . "', '" . $_POST['txtentregacot'] . "', '" . $_POST['txtconsideracionescot'] . "','" . $_POST['subtotal_cotiza'] . "'," . $_POST['iva_cotiza'] . "," . $_POST['iva_cotizacion'] . "," . $_POST['total_cotiza'] . ", '" . $status_operacion . "', now(), now(),'" . $_POST['rbtnpago'] . "','" . $_POST['radioInline'] . "');";
+              (folio_operacion, id_cliente, id_empleado, vigencia_operacion, tiempo_entrega, consideraciones, subtotal, iva, iva_porcentual, total, estatus, fecha_registro, fecha_actualizacion,metodo_pago,tipo_operacion)
+          VALUES('', " . $_POST['slsclientecot'] . ", " . $_POST['ide'] . ", '" . $_POST['txtvigenciacot'] . "', '" .
+  $_POST['txtentregacot'] . "', '" . $_POST['txtconsideracionescot'] . "','" . $_POST['subtotal_cotiza'] . "'," .
+  $_POST['iva_cotiza'] . "," . $_POST['iva_cotizacion'] . "," . $_POST['total_cotiza'] . ", '" .
+  $status_operacion . "', now(), now(),'" . $_POST['rbtnpago'] . "','" . $_POST['radioInline'] . "');";
+
 $result = $conexio->query($query);
 $idcotizacion = $conexio->insert_id;
 

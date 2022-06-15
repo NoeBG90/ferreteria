@@ -1,17 +1,21 @@
 $(document).ready(function() {
 
     actualizarTabla();
-    actualizarTablaCotizacion();
+    //actualizarTablaCotizacion();
     
     console.log(localStorage.getItem("pagina"));
-    if(localStorage.getItem("pagina") == "registro_operacion"){
-        //if(localStorage.getItem("Operacion")!= undefined && localStorage.getItem("pagina")==undefined){
-        console.log("Entra al selector");
+    if(localStorage.getItem("pagina") == "registro_operacion")
+    {
         $("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']").click();
-        // $("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']").prop('checked', true);
         ShowHideDiv($("input[name=radioInline][value='"+localStorage.getItem("Operacion")+"']"));
-        //}
+
+        //Cada ves que se recargue la pagina los datos se reinician
+        $.post( "clearsessionoperacionesinicio.php",{}, function( data ) {
+            $('#tbcotiza tbody').html(data);
+            actualizarTablaCotizacion();
+        });
     }
+
     if(localStorage.getItem("pagina") == "editar_cotizacion"){
         actualizarTablaCotizacionEdicion();
     }
@@ -45,26 +49,24 @@ $(document).ready(function() {
             var descuento = Number($(this).find('.descuentos').val());
             var preciocompra = Number($(this).find('.precio_compra').val());
 
-            var total_unitario = cantidad * precio;
-            var total_descuento =  (descuento / 100) * total_unitario;
-            var precio_con_descuento =  total_unitario - total_descuento;
-            var precio_total_compra  = preciocompra * cantidad;
+            var total_unitario = cantidad * precio;//SubTotal
+            var total_descuento =  (descuento / 100) * total_unitario; //Obtenemos el descuento
+            var precio_con_descuento =  total_unitario - total_descuento;//Al Subtotal le quitamos el monto descuento
+            var precio_total_compra  = preciocompra * cantidad;//Precio que nos costo adquirir el producto
 
-            console.log("GJG1. ",id, cantidad, precio, descuento, preciocompra);
-            console.log("GJG2. ",total_unitario, total_descuento, precio_con_descuento, precio_total_compra);
-            console.log("GJG. ",precio_con_descuento, precio_total_compra);
-            if(false /*descuento<=preciocompra*/){
+            console.log("GJG1. ",id, "Cantidad" ,cantidad, "Precio", precio, "Descuenti",descuento, "Precio Compra",preciocompra);
+            console.log("GJG2. ","Can * Precio",total_unitario, "Tot Descuento",total_descuento, "Precio C Des",precio_con_descuento, "Total Com",precio_total_compra);
+            console.log("GJG. ","Precio Con Des", precio_con_descuento, "Precio Tot Compra",precio_total_compra);
+            if(precio_con_descuento <= precio_total_compra){
                 console.log("Precio superado");
                 swal({
                     title: "",
-                    text: "El precio del producto no puede superar el precio de compra",
+                    text: "El precio final del producto no puede ser menor al precio de compra.",
                     type: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: "SI",
                     closeOnConfirm: false
-                }, function () {
-
                 });
             }
 
@@ -297,33 +299,19 @@ $(document).ready(function() {
          });
     }
 
-          
+    $("#iva_compra").change(function(){
+        actualizarTabla();
 
-          $("#iva_compra").change(function(){
+    });
 
-              actualizarTabla();
+    $("#cbxacceso").click(function(){
+        if($("#cbxacceso").is(':checked')){
+            $("#divusuario").show();
+        }else{
+            $("#divusuario").hide();
 
-          });
-
-
-
-          
-
-            $("#cbxacceso").click(function(){
-
-                if($("#cbxacceso").is(':checked')){
-
-                    $("#divusuario").show();
-
-                }else{
-
-                    $("#divusuario").hide();
-
-                }
-
-            });
-
-
+        }
+    });
 
     //mensaje de bienvenida
     function ShowHideDiv(radio) {
@@ -347,15 +335,9 @@ $(document).ready(function() {
 
     };
 
-
-
-
-
     $('input[name="radioInline"]').change(function()
     {
-        console.log($('input[name="radioInline"]:checked').val());
-        console.log(localStorage.getItem("Operacion"));
-        ShowHideDiv(this);
+        console.log($('input[name="radioInline"]:checked').val());       
         if(localStorage.getItem("Operacion") != null 
             && (localStorage.getItem("Operacion") != $('input[name="radioInline"]:checked').val()))
         {
@@ -376,7 +358,11 @@ $(document).ready(function() {
                         var value = localStorage.getItem("Operacion");
                         $radios.filter('[value='+value+']').prop('checked', true);
                     }
+                    console.log("Radio: ", $('input[name="radioInline"]:checked').val());
+                    ShowHideDiv(this);
                 });
+        }else{
+            localStorage.setItem("Operacion",$('input[name="radioInline"]:checked').val());
         }
     });
 
@@ -414,24 +400,26 @@ $(document).ready(function() {
 
 
 
-    function recuperarOperacion(id){
-
-        //console.log("Recupera cotizacion");
+    function recuperarOperacion(id)
+    {
         $("#btnvalidaproductocot").prop("disabled", true);
-
-        //console.log($("#slscotizaciones  option:selected").val());
         $.post("servlets/recuperacotizacion.php", {id_operacion: id },
             function( data ){
-                console.log("GJG", data);
                 jsoncotizacion=JSON.parse(data);
                 $('#tbcotiza tbody').html(data.tabla);
 
-                $("#slsclientecot option").each(function(){
+                $('#slsclientecot').empty();
+                var $option = $("<option/>", {
+                    value: jsoncotizacion.header.idcliente,
+                    text: jsoncotizacion.header.cliente
+                });
+                $('#slsclientecot').append($option);
+                /*$("#slsclientecot option").each(function(){
                     if ($(this).val() == jsoncotizacion.header.idcliente ){
                         $("#slsclientecot option[value="+$(this).val()+"]").attr("selected",true);
                         $( "#slsclientecot" ).change();
                     }
-                });
+                });*/
 
                 $("#txtvigenciacot").val(jsoncotizacion.header.vigencia);
                 $("#txtentregacot").val(jsoncotizacion.header.tiempo_entrega);
@@ -442,8 +430,6 @@ $(document).ready(function() {
                 $("#recuperado").val("1");
                 $("#idrecuperado").val(jsoncotizacion.header.foliocotizacion);
                 localStorage.setItem("FlagDatos","1");
-
-                //console.log(localStorage.getItem("FlagDatos"));
                 swal({
                     title: "OK!",
                     text: "Operacion recuperada.",
@@ -457,6 +443,7 @@ $(document).ready(function() {
     window.CallFunctionRecuperarOperacion = function CallFunctionRecuperarOperacion(id){
         console.log("Si entro aquii id", id);
         recuperarOperacion(id);
+
     }
 
     //recuperar pedido
@@ -491,7 +478,11 @@ $(document).ready(function() {
                     text: "Operación recuperada.",
                     type: "success"
                 });
-
             });
-        });
     });
+
+    window.CallFunctionCloseFancyVentas = function CallFunctionCloseFancyVentas(){
+        $.fancybox.close();
+        location.replace("ventas.php");
+    }
+});

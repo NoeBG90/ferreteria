@@ -90,8 +90,7 @@ $('#frmcompra').validate(
         }
 });
 
-$('#frmregistrocotizaciones').validate(
-    {
+$('#frmregistrocotizaciones').validate({
         rules: {
             radioInline:{required:true},
             slsclientecot:{required:true},
@@ -109,50 +108,84 @@ $('#frmregistrocotizaciones').validate(
             txtconsideracionescot:{required:"Ingrese consideraciones de cotización"},
             rbtnpago:{required:"Seleccione el método de pago"},
             iva_cotiza:{required:"Seleccione el IVA correspondiente de la cotización"}
-            },submitHandler: function(form) {
-                swal({
-                  title: "",
-                  text: "Los datos capturados son correctos?",
-                  type: "warning",
-                  showCancelButton: true,
-                  confirmButtonColor: "#DD6B55",
-                  confirmButtonText: "SI",
-                  closeOnConfirm: false
-                }, function () {
-                    $.post( "servlets/guardar_operacion.php",$("#frmregistrocotizaciones").serialize(), function( data ) {
-                    console.log("Respuesta Save: ", data);
-                        if(data==1){
-                        mensaje="";
-                        url="";
-                        console.log($('input[name="radioInline"]:checked').val());
-                            if($('input[name="radioInline"]:checked').val()=="Cotizacion"){
-                                url="cotizaciones.php";
-                                mensaje="La cotización se registro correctamente.";
-                            }else if($('input[name="radioInline"]:checked').val()=="Pedido"){ 
-                                url="pedidos.php";
-                                mensaje="El pedido se registro correctamente.";
-                            }else if($('input[name="radioInline"]:checked').val()=="Venta"){
-                                url="ventas.php";
-                                mensaje="La venta se registro correctamente.";
-                            }
-                                swal({
-                                    title: "Guardada!",
-                                    text: mensaje,
-                                    type: "success"
-                                });
-                                location.replace(url);
-                        }else{
-                            swal({
-                                title: "ERROR!",
-                                text: data,
-                                type: "error"
-                            });
-                        }
+        },submitHandler: function(form) {
+
+            let guardarOperacion = true;
+            $("#tbcotiza tbody > tr ").each(function(id) {
+                if(isNaN(Number($(this).find('.cantidades').val()))){
+                    guardarOperacion = false;
+                }
+                var cantidad    = Number($(this).find('.cantidades').val());
+                var precio      = Number($(this).find('.precios').val());
+                var descuento   = Number($(this).find('.descuentos').val());
+                var preciocompra = Number($(this).find('.precio_compra').val());
+
+                var total_unitario  = cantidad * precio;//SubTotal
+                var total_descuento =  (descuento / 100) * total_unitario; //Obtenemos el descuento
+                var precio_con_descuento =  total_unitario - total_descuento;//Al Subtotal le quitamos el monto descuento
+                var precio_total_compra  = preciocompra * cantidad;//Precio que nos costo adquirir el producto
+
+                if(precio_con_descuento <= precio_total_compra){
+                    swal({
+                        title: "",
+                        text: "El precio final del producto no puede ser menor al precio de compra.",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "SI",
+                        closeOnConfirm: false
                     });
-                });
+                    guardarOperacion = false;
+                }
+            });
+            if(!guardarOperacion){
+                return;
             }
+
+            swal({
+                title: "",
+                text: "Los datos capturados son correctos?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "SI",
+                closeOnConfirm: false
+            }, function () {
+                $.post( "servlets/guardar_operacion.php",$("#frmregistrocotizaciones").serialize(), function( data ) {
+                console.log("Respuesta Save: ", data);
+                if(data==1){
+                    mensaje="";
+                    url="";
+                    console.log($('input[name="radioInline"]:checked').val());
+                    if($('input[name="radioInline"]:checked').val()=="Cotizacion"){
+                        url="cotizaciones.php";
+                        mensaje="La cotización se registro correctamente.";
+                    }else if($('input[name="radioInline"]:checked').val()=="Pedido"){ 
+                        url="pedidos.php";
+                        mensaje="El pedido se registro correctamente.";
+                    }else if($('input[name="radioInline"]:checked').val()=="Venta"){
+                        url="ventas.php";
+                        mensaje="La venta se registro correctamente.";
+                    }
+                    swal({
+                        title: "Guardada!",
+                        text: mensaje,
+                        type: "success"
+                    });
+                    location.replace(url);
+                }else{
+                    swal({
+                        title: "ERROR!",
+                        text: data,
+                        type: "error"
+                    });
+                }
+            });
+        });
+    }
 });
-    ///Editar cotizacion
+
+///Editar cotizacion
 $('#frmregistrocotizaciones_edicion').validate(
     {
         rules: {

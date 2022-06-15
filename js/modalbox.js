@@ -35,22 +35,34 @@ $(document).ready(function() {
             });
             return;
         }
-        var operacion;
-        if($("#rbtnpedido").is(":checked")){
-            operacion = 'Cotizacion';
-        }else if($("#rbtnventa").is(":checked")){
-            operacion = 'Pedido';
-        }else{
+        if($('#slsclientecot').val().length <= 0){
+            swal({
+                title: "¡Aviso!",
+                text: "Es necesario seleccionar el un cliente.",
+                type: "warning"
+            });
             return;
         }
 
+        let operacion = "";
+        let estatus = "";
+        if($("#rbtnpedido").is(":checked")){
+            operacion = 'Cotizacion';
+            estatus = 'Aceptada';
+        }else if($("#rbtnventa").is(":checked")){
+            operacion = 'Pedido';
+            estatus = 'Por entregar';
+        }else{
+            return;
+        }
+        console.log("Numero cliente", $('#slsclientecot').val(), "Operacion: " , operacion);
         $.fancybox({
             'width': '60%',
             'height': '80%',
             'autoScale': true,
             'transitionIn': 'fade',
             'transitionOut': 'fade',
-            'href': 'mostraroperacion.php?operacion='+operacion,
+            'href': 'mostraroperacion.php?operacion='+operacion+'&estatus='+estatus+'&cliente='+$('#slsclientecot').val(),
             'type': 'iframe'
         });
     });

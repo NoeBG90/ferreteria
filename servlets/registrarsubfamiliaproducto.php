@@ -28,3 +28,4 @@ if (0 > 0) {
 	}
 	echo json_encode($data);
 }
+$conexio->close();

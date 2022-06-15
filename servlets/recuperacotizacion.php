@@ -22,6 +22,7 @@ while ($filacotizacion = $resultcotizacion->fetch_assoc()) {
   $objheader->idempleado = $filacotizacion['idempleado'];
   $objheader->nombreempleado = $filacotizacion['empleado'];
   $objheader->idcliente = $filacotizacion['idcliente'];
+  $objheader->cliente = $filacotizacion['cliente'];
   $objheader->vigencia = $filacotizacion['vigencia_operacion'];
   $objheader->tiempo_entrega = $filacotizacion['tiempo_entrega'];
   $objheader->consideraciones = $filacotizacion['consideraciones'];
@@ -92,3 +93,4 @@ $objfull->header = $objheader;
 $objfull->detalle = $objdetalletabla;
 $objfull->tabla = $_SESSION['operacion']['tabla'];
 print_r(json_encode($objfull));
+$conexio->close();

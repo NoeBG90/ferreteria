@@ -19,24 +19,27 @@
 <body class="">
 
     <?php
-
     ini_set("display_errors", "0");
-
     include "conexion/conexion.php";
 
     $conexio =   conectar_bd();
-    $params = $_GET['operacion'];
-    $query = "select o.id_operacion, o.folio_operacion, c.nombre as nombre_cliente, e.nombre as nombre_empleado, o.vigencia_operacion, o.tiempo_entrega, o.total, o.estatus, o.fecha_registro, o.fecha_actualizacion, o.metodo_pago from operaciones o, clientes c , empleados e
-    where o.id_cliente = c.id_cliente and o.id_empleado = e.id_empleado and tipo_operacion LIKE '%" . $params . "%' ";
-    print_r($query);
+    $operacion = $_GET['operacion'];
+    $estatus = $_GET['estatus'];
+
+    $query = "select o.id_operacion, o.folio_operacion, c.nombre as nombre_cliente, e.nombre as nombre_empleado, o.vigencia_operacion, 
+                o.tiempo_entrega, o.total, o.estatus, o.fecha_registro, o.fecha_actualizacion, o.metodo_pago from operaciones o, clientes c , 
+                empleados e
+        where o.id_cliente = c.id_cliente and o.id_empleado = e.id_empleado and tipo_operacion LIKE '%" . $operacion . "%' 
+                and o.estatus= '" . $estatus . "' and o.id_cliente = " . $_GET['cliente'] . " order by 1 desc";
     $result = $conexio->query($query);
+    $conexio->close();
     ?>
 
     <div id="wrapper">
         <div class="gray-bg">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-sm-6">
-                    <h2>Selector de <?php echo $params[0] ?></h2>
+                    <h2>Selector de <?php echo $operacion ?></h2>
                 </div>
                 <div class="col-sm-6">
                 </div>
@@ -45,7 +48,7 @@
             <div class="wrapper wrapper-content col-lg-12">
                 <div class="">
                     <div class="table-responsive">
-                        <table id="productoscompra" class="table table-stripped table-bordered table-hover dt-responsive nowrap" data-page-size="15">
+                        <table id="productoscotiza" class="table table-stripped table-bordered table-hover dt-responsive nowrap" data-page-size="15">
                             <thead>
                                 <tr>
                                     <th data-toggle="true">Folio</th>
@@ -69,7 +72,7 @@
                                         <td><?php echo $fila['total']; ?></td>
                                         <td><?php echo $fila['estatus']; ?></td>
                                         <td><?php echo $fila['metodo_pago']; ?></td>
-                                        <td class="text-center"><a class="fa fa-history fa-lg addOpe" id="<?php echo $fila['id_operacion']; ?>"></a></td>
+                                        <td class="text-center"><a class="fa fa-history fa-lg addOpe" id="<?php echo $fila['id_operacion']; ?>" data-toggle="tooltip" data-placement="top" title="Recuperar Operación"></a></td>
                                     </tr>
                                 <?php
                                 }
@@ -105,7 +108,6 @@
         $(document).ready(function() {
             $(".addOpe").click(function() {
                 var id = $(this).attr('id');
-                console.log("di click, ", id);
                 window.parent.CallFunctionRecuperarOperacion(id);
             });
         });

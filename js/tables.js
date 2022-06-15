@@ -593,8 +593,36 @@ $('#subfamilias').DataTable({
                                   "sSortAscending": ": Ordenar en orden ascendente", "sSortDescending": ": Ordenar en orden descendente"
                               }
                           },
+        order: [0,'desc'],
+        pageLength: 15,
+        responsive: true,
+        orientation: 'landscape',
+        dom:'<lf<t><ip>>'
+    });
 
-        pageLength: 10,
+    $('#productoscotiza').DataTable({
+        "language": {
+                                "sProcessing": "Procesandos...",
+                                "sLengthMenu": "Mostrar _MENU_ registros ",
+                                "sZeroRecords": "Ningún resultado encontrado",
+                                "sEmptyTable": "Datos no disponibles",
+                                "sInfo": "Registros _START_ a _END_ de _TOTAL_",
+                                "sInfoEmpty": "No se muestra ninguna línea",
+                                "sInfoFiltered": "(Filtrar un máximo de_MAX_)",
+                                "sInfoPostFix": "",
+                                "sSearch": "Buscar:",
+                                "sUrl": "",
+                                "sInfoThousands": ",",
+                                "sLoadingRecords": "Cargando...",
+                                "oPaginate": {
+                                    "sFirst": "Primero", "sLast": "Último", "sNext": "Próximo", "sPrevious": "Anterior"
+                                },
+                                "oAria": {
+                                    "sSortAscending": ": Ordenar en orden ascendente", "sSortDescending": ": Ordenar en orden descendente"
+                                }
+                            },
+        order: [0,'desc'],
+        pageLength: 15,
         responsive: true,
         orientation: 'landscape',
         dom:'<lf<t><ip>>'

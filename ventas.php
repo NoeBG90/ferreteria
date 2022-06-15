@@ -3,9 +3,9 @@
 include "conexion/conexion.php";
 $conexio =   conectar_bd();
 $query = "SELECT c.id_operacion ,folio_operacion , c.vigencia_operacion, c.subtotal , c.iva ,c.iva_porcentual ,
-c.total,date(c.fecha_actualizacion) as fecha_actualizacion ,c.estatus ,date(c.fecha_registro) as fecha_registro,
-e.nombre as empleado ,c2.nombre as cliente ,c2.telefono ,c2.nom_contacto ,c2.RFC,
-(select sum(cantidad_abono) from abonos where id_operacion = c.id_operacion) as monto_abonado 
+            c.total,date(c.fecha_actualizacion) as fecha_actualizacion ,c.estatus ,date(c.fecha_registro) as fecha_registro,
+            e.nombre as empleado ,c2.nombre as cliente ,c2.telefono ,c2.nom_contacto ,c2.RFC,
+            (select sum(cantidad_abono) from abonos where id_operacion = c.id_operacion) as monto_abonado 
 FROM operaciones c, empleados e, clientes c2 
 where c.id_cliente =c2.id_cliente and c.id_empleado =e.id_empleado and tipo_operacion='Venta' order by c.id_operacion desc";
 $result = $conexio->query($query);
@@ -85,10 +85,7 @@ $result = $conexio->query($query);
                                             <td><?php echo $fila['fecha_actualizacion']; ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group d-flex justify-content-around">
-                                                    <?php
-                                                    $saldo = $fila['total'] - $fila['monto_abonado'];
-                                                    ?>
-                                                    <button id="abonar<?php echo $fila['id_operacion']; ?>" name="abonar<?php echo $fila['id_operacion']; ?>" class="btnabonar btn btn-warning" value="<?php echo $fila['id_operacion']; ?>" <?php echo $saldo > 0 ? '' : 'disabled' ?>><i class="fa fa-calculator"></i></button>
+                                                    <button id="abonar<?php echo $fila['id_operacion']; ?>" name="abonar<?php echo $fila['id_operacion']; ?>" class="btnabonar btn btn-warning" value="<?php echo $fila['id_operacion']; ?>" <?php echo $fila['estatus'] == 'Pagada' ? 'disabled' : '' ?>><i class="fa fa-calculator"></i></button>
                                                     <button id="movimiento<?php echo $fila['id_operacion']; ?>" name="movimiento<?php echo $fila['id_operacion']; ?>" class="btnmovimiento btn btn-primary" value="<?php echo $fila['id_operacion']; ?>" type="button" data-toggle="tooltip" data-placement="top" title="Movimientos"><i class="fa fa-table"></i></button>
 
 

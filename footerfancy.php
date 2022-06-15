@@ -197,15 +197,22 @@
                 },
                 rbtnpago: {
                     required: true
+                },
+                txtsaldodeuventa: {
+                    number: true,
+                    min: 0
                 }
             },
             messages: {
                 textabonoventa: {
                     required: "Ingrese el monto a abonar",
-                    digits: "Ingrese solo números."
+                    number: "Ingrese solo números."
                 },
                 rbtnpago: {
                     required: "Seleccione el método de pago"
+                },
+                txtsaldodeuventa: {
+                    min: "El saldo incorrecto."
                 }
             },
             submitHandler: function(form) {
@@ -227,8 +234,9 @@
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: "SI",
-                    closeOnConfirm: false
+                    closeOnConfirm: true
                 }, function() {
+                    //$(".confirm").attr('disabled', 'disabled');
                     $.post("servlets/registrar_abono.php", $("#frmabonosventa").serialize(), function(data) {
                         console.log(data);
                         if (data == 1) {
@@ -236,8 +244,10 @@
                                 title: "Guardado!",
                                 text: "El abono se registro correctamente.",
                                 type: "success"
-                            }, function() {
-                                $.fancybox.close();
+                            }, function(a) {
+                                if (a) {
+                                    window.parent.CallFunctionCloseFancyVentas();
+                                }
                             });
                         } else {
                             swal({
@@ -258,11 +268,11 @@
 
             let final = inicial - abono;
             let saldo = (parseFloat(Math.round(final * 100) / 100).toFixed(2)) || '';
-            if (parseInt(final) < 0 || saldo === '') {
+            /*if (parseInt(final) < 0 || saldo === '') {
                 $('#btnsubmitcotizacion').prop('disabled', true);
             } else {
                 $('#btnsubmitcotizacion').prop('disabled', false);
-            }
+            }*/
             $('#txtsaldodeuventa').val(saldo);
         });
 

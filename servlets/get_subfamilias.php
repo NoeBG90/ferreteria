@@ -18,5 +18,6 @@ while ($fila = $result->fetch_assoc()) {
 	array_push($subfamilias, $responsedet);
 }
 
+$conexio->close();
 $response = $subfamilias;
 print(json_encode($response));
