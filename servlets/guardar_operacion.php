@@ -44,7 +44,7 @@ if ($result != 0) {
 
 
     $queryinsertdetcot = "INSERT INTO detalle_operaciones (id_operacion, id_producto, cantidad, precio, descuento, subtotal)
-    VALUES(" . $idcotizacion . ", " . $_SESSION['operacion']['productos'][$i]->id . ", " . $_SESSION['operacion']['productos'][$i]->stok . ", " .
+    VALUES(" . $idcotizacion . ", " . $_SESSION['operacion']['productos'][$i]->id . ", " . $_SESSION['operacion']['productos'][$i]->cantidad . ", " .
       $_SESSION['operacion']['productos'][$i]->precio_venta . "," . $_SESSION['operacion']['productos'][$i]->descuento . "," .
       $_SESSION['operacion']['productos'][$i]->subtotal . ");";
 
@@ -54,7 +54,7 @@ if ($result != 0) {
       $conexio->rollback();
     } else {
       if ($_POST['radioInline'] == 'Pedido') {
-        $queryactualizaStock = "UPDATE productos SET stock=stock-" . $_SESSION['operacion']['productos'][$i]->stok . " WHERE id_producto=" .
+        $queryactualizaStock = "UPDATE productos SET stock=stock-" . $_SESSION['operacion']['productos'][$i]->cantidad . " WHERE id_producto=" .
           $_SESSION['operacion']['productos'][$i]->id;
         $resultstok = $conexio->query($queryactualizaStock);
         if ($resultstok == 0) {
@@ -65,7 +65,7 @@ if ($result != 0) {
         $resultupdate_pedido = $conexio->query($query_updatepedido);
       } elseif ($_POST['radioInline'] == 'Venta') {
         if ($_POST['recuperado'] == 0) {
-          $queryactualizaStock = "UPDATE productos SET stock=stok-" . $_SESSION['operacion']['productos'][$i]->stok . " WHERE id_producto=" . $_SESSION['operacion']['productos'][$i]->id;
+          $queryactualizaStock = "UPDATE productos SET stock=stock-" . $_SESSION['operacion']['productos'][$i]->cantidad . " WHERE id_producto=" . $_SESSION['operacion']['productos'][$i]->id;
           $resultstok = $conexio->query($queryactualizaStock);
           if ($resultstok == 0) {
             $conexio->rollback();

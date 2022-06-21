@@ -42,12 +42,11 @@ while ($filavendedor = $result_vendedor->fetch_assoc()) {
     $vendedor = $filavendedor['nombre'];
 }
 
+$querydetalle = "select p.id_producto,p.SKU ,p.producto, p.descripcion,dc.cantidad ,dc.precio ,dc.descuento ,dc.subtotal, 
+                    p.unidad_medida, p.precio_compra, p.stock
+                from detalle_operaciones dc, productos p ,operaciones c 
+            where dc.id_producto = p.id_producto and dc.id_operacion = c.id_operacion and c.id_operacion = " . $id_cotizacion;
 
-$querydetalle = "select p.id_producto,p.SKU ,p.producto, p.descripcion,dc.cantidad ,dc.precio ,dc.descuento ,dc.subtotal, p.unidad_medida, p.precio_compra 
-        from detalle_operaciones dc, productos p ,operaciones c 
-    where dc.id_producto = p.id_producto and dc.id_operacion = c.id_operacion and c.id_operacion = " . $id_cotizacion;
-
-///echo $querydetalle;
 $result_detalle = $conexio->query($querydetalle);
 $_SESSION['cotizacion_edit']['productos'] = array();
 
@@ -59,7 +58,8 @@ while ($filadetalle = $result_detalle->fetch_assoc()) {
     $objdetalle = new stdClass();
     $objdetalle->id = $filadetalle['id_producto'];
     $objdetalle->producto = $filadetalle['producto'];
-    $objdetalle->stok = $filadetalle['cantidad'];
+    $objdetalle->cantidad = $filadetalle['cantidad'];
+    $objdetalle->stok = $filadetalle['stock'];
     $objdetalle->sku = $filadetalle['SKU'];
     $objdetalle->precio_venta = $filadetalle['precio'];
     $objdetalle->precio_compra = $filadetalle['precio_compra'];
@@ -71,23 +71,9 @@ while ($filadetalle = $result_detalle->fetch_assoc()) {
 
 generarTablaCotizacionEditar();
 
-//print_r($_SESSION['productos_cotizacion_edicion']);
-/*$_SESSION['tabla_cotizacion'] = "";
-for ($i = 0; $i < sizeof($_SESSION['productos_cotizacion_edicion']); $i++) {
-
-    $_SESSION['tabla_cotizacion'] .= "<tr>
-    <td class='id' >" . $i . "</td><td >" . $_SESSION['productos_cotizacion_edicion'][$i]->sku . "</td>
-    <td >" . $_SESSION['productos_cotizacion_edicion'][$i]->producto . "</td>
-    <td ><input type='text' class='cantidades col-sm-9 text-left' name='txtcantidad'  id='txtcantidad" . $i . "' value='" . $_SESSION['productos_cotizacion_edicion'][$i]->stok . "' ></td>
-    <td ><input type='text' name='txtprecioventa' id='txtprecioventa" . $i . "' class='precios col-sm-9 text-left'  value='" . $_SESSION['productos_cotizacion_edicion'][$i]->precio_venta . "' ></td>
-    <td ><input type='text' class='descuentos col-sm-9 text-left' name='txtdescuento' id='txtdescuento" . $i . "' value='" . $_SESSION['productos_cotizacion_edicion'][$i]->descuento . "'  ></td>
-    <td ><input type='text' class='subtotal col-sm-9 text-left' name='txtsubtotal' id='txtsubtotal" . $i . "' readonly ></td>
-    </tr>";
-}*/
-
 $query2 = "select * from clientes where estatus='Activo' ;";
 $resultclientes = $conexio->query($query2);
-
+$conexio->close();
 ?>
 
 <div class="row wrapper border-bottom white-bg page-heading">

@@ -26,7 +26,7 @@ if ($result != 0) {
 
   for ($i = 0; $i < sizeof($_SESSION['cotizacion_edit']['productos']); $i++) {
     $queryinsertdetcot = "INSERT INTO detalle_operaciones (id_operacion, id_producto, cantidad, precio, descuento, subtotal)
-    VALUES(" . $idcotizacion . ", " . $_SESSION['cotizacion_edit']['productos'][$i]->id . ", " . $_SESSION['cotizacion_edit']['productos'][$i]->stok .
+        VALUES(" . $idcotizacion . ", " . $_SESSION['cotizacion_edit']['productos'][$i]->id . ", " . $_SESSION['cotizacion_edit']['productos'][$i]->cantidad .
       ", " . $_SESSION['cotizacion_edit']['productos'][$i]->precio_venta . "," . $_SESSION['cotizacion_edit']['productos'][$i]->descuento .
       "," . $_SESSION['cotizacion_edit']['productos'][$i]->subtotal . ");";
 
@@ -43,3 +43,4 @@ if ($result != 0) {
 }
 
 $conexio->commit();
+$conexio->close();

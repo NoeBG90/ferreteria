@@ -73,14 +73,14 @@ $(document).ready(function() {
             subTotal += total_unitario;
             descuentoTotal += total_descuento;
             $.post( "servlets/calculadora_cotizacion.php", 
-                {'cantidad':cantidad,'posicion':id,'precio':precio,'descuento':descuento,'subtotal':precio_con_descuento, tipo:'actualizar'},
+                {'posicion':id, 'cantidad':cantidad, 'precio':precio, 'descuento':descuento, 'subtotal':precio_con_descuento, tipo:'actualizar'},
                 function( data ) {
                     console.log("respuesta. Cargando. ",data);
                     $('#tbcotiza tbody').html(data);
                 }
             );
         });
-        
+
         var iva=$("#iva_cotiza").children("option:selected").val();
         var total_iva= (iva/100) * subTotal;
         console.log(subTotal, total_iva, descuentoTotal);
@@ -192,7 +192,7 @@ $(document).ready(function() {
             descuentoTotal += total_descuento;
 
             $.post( "servlets/actualizarcantidad_cotiza_edicion.php",
-                {'cantidad':cantidad,'posicion':id,'precio':precio, 'descuento':descuento,'subtotal':precio_con_descuento,tipo:'modificar'}, 
+                {'posicion':id, 'cantidad':cantidad, 'precio':precio, 'descuento':descuento,'subtotal':precio_con_descuento,tipo:'modificar'}, 
                     function( data ) {
                         console.log("respuesta. Cargando Edit. ",data);
                         $('#tbcotiza_edicion tbody').html(data);
@@ -336,8 +336,7 @@ $(document).ready(function() {
     };
 
     $('input[name="radioInline"]').change(function()
-    {
-        console.log($('input[name="radioInline"]:checked').val());       
+    {    
         if(localStorage.getItem("Operacion") != null 
             && (localStorage.getItem("Operacion") != $('input[name="radioInline"]:checked').val()))
         {
@@ -358,46 +357,27 @@ $(document).ready(function() {
                         var value = localStorage.getItem("Operacion");
                         $radios.filter('[value='+value+']').prop('checked', true);
                     }
-                    console.log("Radio: ", $('input[name="radioInline"]:checked').val());
                     ShowHideDiv(this);
                 });
         }else{
+            ShowHideDiv(this);
             localStorage.setItem("Operacion",$('input[name="radioInline"]:checked').val());
         }
     });
 
     $("#btncancelarcotizacion").click(function(){
-
-            //console.log("entra al clcik");
-
-            swal({
-
-                                  title: "",
-
-                                  text: "Desea salir? Los datos capturados se perderan",
-
-                                  type: "warning",
-
-                                  showCancelButton: true,
-
-                                  confirmButtonColor: "#DD6B55",
-
-                                  confirmButtonText: "SI",
-
-                                  closeOnConfirm: false
-
-                              }, function () {
-
-                                location.replace("clearsession.php");
-
-                              });
-
-
-
+        swal({
+            title: "",
+            text: "Desea salir? Los datos capturados se perderan",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "SI",
+            closeOnConfirm: false
+        }, function () {
+            location.replace("clearsession.php");
         });
-
-
-
+    });
 
 
     function recuperarOperacion(id)

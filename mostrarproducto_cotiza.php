@@ -19,15 +19,14 @@
 <body class="">
 
     <?php
-
     ini_set("display_errors", "0");
-
     include "conexion/conexion.php";
 
     $conexio =   conectar_bd();
     $params = explode("|", $_GET['producto']);
     $query = "SELECT p.*,fp.familia FROM productos p, familia_producto fp WHERE p.id_familia=fp.id_familia and imagen_producto !='' and (producto like '%" . $params[0] . "%' or SKU like '%" . $params[0] . "%')";
     $result = $conexio->query($query);
+    $conexio->close();
     ?>
 
     <div id="wrapper">

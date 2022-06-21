@@ -23,6 +23,7 @@
     $conexio =   conectar_bd();
     $query = "SELECT p.*,fp.familia FROM productos p, familia_producto fp WHERE p.id_familia=fp.id_familia and imagen_producto !='' and (producto like '%" . $_GET['producto'] . "%' or SKU like '%" . $_GET['producto'] . "%')";
     $result = $conexio->query($query);
+    $conexio->close();
     ?>
     <div id="wrapper">
         <div class="gray-bg">

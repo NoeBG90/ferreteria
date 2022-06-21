@@ -113,6 +113,14 @@ $('#frmregistrocotizaciones').validate({
             let guardarOperacion = true;
             $("#tbcotiza tbody > tr ").each(function(id) {
                 if(isNaN(Number($(this).find('.cantidades').val()))){
+                    swal({
+                        title: "¡Aviso!",
+                        text: "Sin productos agregados.",
+                        type: "warning",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "OK",
+                        closeOnConfirm: false
+                    });
                     guardarOperacion = false;
                 }
                 var cantidad    = Number($(this).find('.cantidades').val());

@@ -24,7 +24,8 @@ if ($_POST['tipo'] === 'agregar') {
       $objdetalle = new stdClass();
       $objdetalle->id       = $fila['id_producto'];
       $objdetalle->producto = $fila['producto'];
-      $objdetalle->stok     = 1; //Cuando se agrega el producto se inicia en 1
+      $objdetalle->cantidad = 1; //Cuando se agrega el producto se inicia en 1
+      $objdetalle->stok     = $fila['stock'];
       $objdetalle->sku      = $fila['SKU'];
       $objdetalle->precio_venta = $fila['precio_venta'];
       $objdetalle->descuento = 0;
@@ -44,11 +45,8 @@ if ($_POST['tipo'] === 'agregar') {
 
   if (!is_nan(intval($_POST['cantidad']))) {
 
-    $contador = 0;
-    $tabla = "";
-    $cantidad = 0;
     $index = $_POST['posicion'];
-    $_SESSION['operacion']['productos'][$index]->stok         = $_POST['cantidad'];
+    $_SESSION['operacion']['productos'][$index]->cantidad     = $_POST['cantidad'];
     $_SESSION['operacion']['productos'][$index]->precio_venta = $_POST['precio'];
     $_SESSION['operacion']['productos'][$index]->descuento    = $_POST['descuento'];
     $_SESSION['operacion']['productos'][$index]->subtotal     = $_POST['subtotal'];
@@ -60,17 +58,12 @@ if ($_POST['tipo'] === 'agregar') {
     print_r($_SESSION['operacion']['tabla']);
   }
 } else if ($_POST['tipo'] === 'eliminar') {
-  $contador = 0;
-  $tabla = "";
-  $cantidad = 0;
 
   if (count($_SESSION['operacion']['productos']) > 1) {
     array_splice($_SESSION['operacion']['productos'], intval($_POST['id']), 1);
   } else {
     array_splice($_SESSION['operacion']['productos'], intval($_POST['id']));
   }
-
-  $_SESSION['operacion']['tabla'] = "";
 
   if (count($_SESSION['operacion']['productos']) <= 0) {
     unset($_SESSION['operacion']);

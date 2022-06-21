@@ -47,7 +47,7 @@ if ($_POST['tipo'] === 'agregar') {
     $cantidad = 0;
 
     $i = $_POST['posicion'];
-    $_SESSION['cotizacion_edit']['productos'][$i]->stok         = $_POST['cantidad'];
+    $_SESSION['cotizacion_edit']['productos'][$i]->cantidad     = $_POST['cantidad'];
     $_SESSION['cotizacion_edit']['productos'][$i]->precio_venta = $_POST['precio'];
     $_SESSION['cotizacion_edit']['productos'][$i]->descuento    = $_POST['descuento'];
     $_SESSION['cotizacion_edit']['productos'][$i]->subtotal     = $_POST['subtotal'];

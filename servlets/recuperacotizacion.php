@@ -46,7 +46,8 @@ while ($filavendedor = $result_vendedor->fetch_assoc()) {
   $objheader->vendedor = $filavendedor['nombre'];
 }
 
-$querydetalle = "select p.id_producto,p.SKU ,p.producto, p.descripcion,dc.cantidad ,dc.precio ,dc.descuento ,dc.subtotal, p.unidad_medida, p.precio_compra
+$querydetalle = "select p.id_producto,p.SKU ,p.producto, p.descripcion,dc.cantidad ,dc.precio ,dc.descuento ,dc.subtotal, p.unidad_medida, 
+                  p.precio_compra, p.stock
 from detalle_operaciones dc,productos p ,operaciones c 
 where dc.id_producto =p.id_producto and dc.id_operacion =c.id_operacion and c.id_operacion = " . $id_cotizacion;
 $result_detalle = $conexio->query($querydetalle);
@@ -57,7 +58,8 @@ while ($filadetalle = $result_detalle->fetch_assoc()) {
   $objdetalle = new stdClass();
   $objdetalle->id = $filadetalle['id_producto'];
   $objdetalle->producto = $filadetalle['producto'];
-  $objdetalle->stok = $filadetalle['cantidad'];
+  $objdetalle->cantidad = $filadetalle['cantidad'];
+  $objdetalle->stok = $filadetalle['stock'];
   $objdetalle->sku = $filadetalle['SKU'];
   $objdetalle->precio_venta = $filadetalle['precio'];
   $objdetalle->precio_compra = $filadetalle['precio_compra'];
