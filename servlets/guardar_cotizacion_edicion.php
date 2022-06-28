@@ -18,8 +18,7 @@ $query = "UPDATE operaciones
               total=" . $_POST['total_cotiza_edit'] . ",   fecha_actualizacion=now()
 WHERE id_operacion=" . $idcotizacion;
 $result = $conexio->query($query);
-
-if ($result != 0) {
+if ($result) {
 
   $deletecotizacion = "DELETE FROM detalle_operaciones where id_operacion=" . $idcotizacion;
   $resultdeletecotizacion = $conexio->query($deletecotizacion);
@@ -31,7 +30,7 @@ if ($result != 0) {
       "," . $_SESSION['cotizacion_edit']['productos'][$i]->subtotal . ");";
 
     $result = $conexio->query($queryinsertdetcot);
-    if ($result == 0) {
+    if (!$result) {
       $conexio->rollback();
     }
   }

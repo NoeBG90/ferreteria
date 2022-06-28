@@ -24,7 +24,7 @@ $(document).ready(function(){
                             }
                         },
 
-    order: [2,'desc'],
+    order: [7,'desc'],
     pageLength: 10,
     responsive: true,
     dom: '<"html5buttons"B>lTfgitp',

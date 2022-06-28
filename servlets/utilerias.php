@@ -35,29 +35,29 @@ function generarTablaCotizacionEditar()
 {
   $_SESSION['cotizacion_edit']['tabla'] = "";
 
-  if (count($_SESSION['operacion']['productos']) > 0) {
+  if (count($_SESSION['cotizacion_edit']['productos']) > 0) {
     for ($i = 0; $i < sizeof($_SESSION['cotizacion_edit']['productos']); $i++) {
       $_SESSION['cotizacion_edit']['tabla'] .=
         "<tr class='cotizacion' id='" . $i . "'>
-            <td >" . $i . "</td>
-            <td >" . $_SESSION['cotizacion_edit']['productos'][$i]->sku . "</td>
-            <td >" . $_SESSION['cotizacion_edit']['productos'][$i]->producto . "</td>
-            <td >
-              <input type='hidden' class='precio_compra'                name='hddpreciocompra'         id='hddpreciocompra" . $i . "' value='" . $_SESSION['cotizacion_edit']['productos'][$i]->precio_compra . "' >
-              <input type='text' class='inputEdit cantidades col-11 text-center focusNext' name='txtcantidad'  id='txtcantidad" . $i . "'     value='" . $_SESSION['cotizacion_edit']['productos'][$i]->cantidad . "'         ></td>
-            <td > <input type='text' class='inputEdit precios col-11 text-center' name='txtprecioventa'            id='txtprecioventa" . $i . "'  value='" . $_SESSION['cotizacion_edit']['productos'][$i]->precio_venta . "' readonly >
-            </td>
-            <td > <input type='text' class='inputEdit descuentos col-11 text-center focusDesc' name='txtdescuento' id='txtdescuento" . $i . "'    value='" . $_SESSION['cotizacion_edit']['productos'][$i]->descuento . "'  ></td>
-            <td > <input type='text' class='inputEdit subtotal col-11 text-center'             name='txtsubtotal'  id='txtsubtotal" . $i . "'     value='" . $_SESSION['cotizacion_edit']['productos'][$i]->subtotal . "' readonly ></td>
-            <td > <button type='button' class='btn btn-danger btnEliminarCotiza' onclick='eliminarCotizacionEdit(" . $i . ")'><i class='fa fa-trash'></i></button> </td>
-          </tr>";
+              <td >" . $i . "</td>
+              <td >" . $_SESSION['cotizacion_edit']['productos'][$i]->sku . "</td>
+              <td >" . $_SESSION['cotizacion_edit']['productos'][$i]->producto . "</td>
+              <td >
+                <input type='hidden' class='precio_compra'                name='hddpreciocompra'         id='hddpreciocompra" . $i . "' value='" . $_SESSION['cotizacion_edit']['productos'][$i]->precio_compra . "' >
+                <input type='text' class='inputEdit cantidades col-11 text-center focusNext' name='txtcantidad'  id='txtcantidad" . $i . "'     value='" . $_SESSION['cotizacion_edit']['productos'][$i]->cantidad . "'         ></td>
+              <td > <input type='text' class='inputEdit precios col-11 text-center' name='txtprecioventa'            id='txtprecioventa" . $i . "'  value='" . $_SESSION['cotizacion_edit']['productos'][$i]->precio_venta . "' readonly >
+              </td>
+              <td > <input type='text' class='inputEdit descuentos col-11 text-center focusDesc' name='txtdescuento' id='txtdescuento" . $i . "'    value='" . $_SESSION['cotizacion_edit']['productos'][$i]->descuento . "'  ></td>
+              <td > <input type='text' class='inputEdit subtotal col-11 text-center'             name='txtsubtotal'  id='txtsubtotal" . $i . "'     value='" . $_SESSION['cotizacion_edit']['productos'][$i]->subtotal . "' readonly ></td>
+              <td > <button type='button' class='btn btn-danger btnEliminarCotiza' onclick='eliminarCotizacionEdit(" . $i . ")'><i class='fa fa-trash'></i></button> </td>
+            </tr>";
     }
   } else {
     $_SESSION['cotizacion_edit']['tabla'] .= "
-    <tr class='text-center'>
-      <th colspan='8'>No hay productos agregados</th>
-    </tr>
-    ";
+      <tr class='text-center'>
+        <th colspan='8'>No hay productos agregados</th>
+      </tr>
+      ";
   }
 }
 
